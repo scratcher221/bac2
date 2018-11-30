@@ -1,0 +1,22 @@
+\chapter{Related Work}
+\label{cha:related_work}
+\section{Managing Data on the Blockchain}
+There are numerous existing implementations of decentralized apps, some of which we will briefly explore in this section. One example is \emph{MedRec} a system for storing and managing medical data on the blockchain \cite{azaria2016medrec}.
+
+Managing a web application through an administrator backend access is often associated with a lot of time and effort, since the administrator or a team of managers constantly have to monitor the system, and push changes manually as needed. An example of how management can be made easier and more efficient is demonstrated in the system \emph{MedRec}.
+
+Specifically, in this system permission management is done completely automatic by contracts designed for this purpose. A patient can decide what parts of their medical data can be accessed by which parties. It is not necessary to rely on a central server, managed by a trusted authority, to control who can view the data and to which extent. Instead, this information is stored on the distributed ledger, and thus enforced by all the participating nodes. No additional administration is needed, the two parties consisting of patient and care provider can interact directly with each other. Furthermore, the parties don't have to interact with the blockchain directly, as this would be not very user friendly, but an interface is provided which translates the user input into the appropriate API calls that form the connection to the contracts. Querying of data is also done through the blockchain, i.e. the SQL strings for retrieving the data are stored there, and sent to an application for further processing if triggered by an authorized party.
+
+This reduction of management overhead and increase in efficiency can be extended to the application accompanying this work, the cryptocurrency sportsbetting app. The administrators only have to provide information about the available games users can bet on. Other tasks, like managing user funds, access control to the total funds in the contract, and who can withdraw under which circumstances are implemented in the contracts.
+
+\section{Security Tools for Smart Contracts}
+Programming in the realm of smart contracts on decentralized networks always involves dealing with money in the code, as we have already demonstrated in chapter \ref{sec:design_choices}. Because of this, security has a very high priority, to ensure that users can trust in the system and funds are not at risk of being stolen by hackers. Another reason for the need of improved security measures is the fact that a lot of smart contract platforms, including Ethereum, are completely open to the public. Anyone with internet access can call contracts if they have the address, so the worst-case scenario always needs to be considered when developing apps for those platforms. Especially if a \emph{Dapp} gains popularity, it has to be assumed that hackers are interested in exploiting the system for personal profit.
+
+Another issue we need to focus on, is the fact that network participants (miners), are the ones who decide which transactions are accepted, how they should be ordered and they also set the block timestamp, which can be a source of manipulation.
+
+There are a variety of security scanning tools available, mostly for code written for the Ethereum Network. We will explore one of these tools, \emph{Oyente}, in more detail in this section.
+
+\section*{The Security Scanning Tool Oyente}
+
+\emph{Oyente} is a symbolic execution tool developed by Luu et al. and described in their work "Making Smart Contracts Smarter"\cite{luu2016making}. It is capable of analyzing EVM bytecode directly, without needing access to the high level representation in Solidity or Serpent. This is important, because often access to the high level code is not available, as the Ethereum blockchain only stores the EVM bytecode and in many cases developers don't provide access to public repositories to review the source code. The code for \emph{Oyente} is open source.
+

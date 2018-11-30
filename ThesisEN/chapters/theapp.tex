@@ -1,0 +1,93 @@
+\chapter{A Cryptocurrency Sportsbetting App}
+\label{cha:theapp}
+\section{Introduction}
+In this work we show how an existing smart contract app, that relies on the input of truthful data about events that occurred, can be extended to include multiple independent sources to solve the problem of trust. The web app to explore is a sports betting app that works with cryptocurrencies. In the current state the app relies on the owners of the contract to supply necessary data. Only the contract creators have the permission to execute certain methods, which determine the outcome of a game. In this way, they basically have full control over who gets paid and who loses, as there are no checks against fraud by the administrators in place.
+
+We solve this problem by adding an additional contract to the app, which we will call "Oracle", that implements an already existing framework for obtaining data from the internet through an API. The other contracts then get their data from this "Oracle" contract, instead of the administrators.
+
+The motivation for this work is to provide an example of how decentralized apps (Dapps) can be built in such a way as to fully incorporate the principle of decentralization. Although there was a lot of hype surrounding "Dapps", concrete use cases are still limited because of the drawbacks that come with decentralized networks, such as lower speed, throughput and very limited resources. In order to incentivize developers to choose to build apps on decentralized networks despite those drawbacks, a clear advantage needs to be demonstrated. This advantage is that trust in central actors is no longer necessary, which also means that there is no single point of failure for the system. If one of the sources of information becomes corrupted or is no longer available, there are other sources left to compare to. Checks and balances can be included in a contract to cross reference and check multiple sources, before accepting a certain piece of information to be true.
+
+Some questions that will be answered in this work are "How can a smart contract have access to information that is not on the blockchain?". "What methods can be used to secure a system against fraudulent, manipulated data from one source?" , "How can funds be stored in a contract securely?" and "What measures can be taken to minimize the possibility of hackers exploiting weaknesses in the code?"
+\section{The Theory and Concept of Smart Contracts}
+Smart Contracts are a novel, useful technology based on the concept of executing code across a distributed network of nodes. There are many existing implementations of such networks that enable the deployment of so-called "DApps (Decentralized Apps)". The most popular of those platforms is the Ethereum Network. 
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{ | l | l | r |}
+		\hline
+		\multicolumn{3}{ | c | }{\textbf{Smart Contract Platforms}} \\ \hline
+		\emph{Platform name} & \emph{Engine} & \emph{Contract language} \\ \hline
+		Bitcoin & Bitcoin script & Ivy-lang, Balzac \\ \hline
+		Ethereum & EVM & Solidity \\ \hline
+		EOS & EVM / eWASM & C/C++ \\ \hline
+		Neo & NeoVM & C, C++, GO, Py, JS \\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:contract-platforms}Overview of the different available Smart Contract platforms.}
+\end{table}
+\\
+The EVM (Ethereum Virtual Machine) was developed by Vitalik Buterin in 2013 \cite{Buterin2013}. It marked the beginning of the development of Turing complete Smart Contract platforms and programming languages. By offering an immutable, secure, transaction based state machine, it enables a way for participants to commit to a verifiable value transfer. This transfer of value is secured by the underlying computational power of the network, and can be publicly viewed at any time. 
+\section*{Proof of Work}
+The mechanism to make transactions secure is called \emph{proof-of-work}. This proof is a way to show that computationally intensive work has been done, in order to obtain a certain piece of information, namely some input data that produces an output hash with a predefined format, as outlined by Nakamoto in the Bitcoin Whitepaper \cite{Nakamoto2009}. 
+
+More specifically, the work has to be done by \emph{miners} in order to include a transaction into a block, that is then appended to the public ledger (the blockchain). After a block has been added to the ledger, this cannot be undone, except by redoing the computational work. Because of this, users of the system can be confident that a transaction is very unlikely to be altered, if it has been included in a block, and more blocks have been appended after it, since it would be unprofitable and a waste of resources to try to redo all the computationally intensive work. 
+\section*{Potential Attacks on the Network}
+In the Bitcoin whitepaper, it has been demonstrated that the probability that an attacker will catch up with the honest chain of blocks drops exponentially as more blocks are added to the ledger \cite[p.~7]{Nakamoto2009}. The trust in this system is therefore backed by the entire network of honest miners. As long as the majority of the computational power of the network is controlled by honest participants, end users can be sure that the contracts they create, and the method calls on these contracts are recorded by the entire blockchain and the results are stored there irreversibly.
+\section*{Use Cases of Smart Contracts}
+An example of a use case of contracts that are algorithmically enforced is law, as discussed by Buterin in the Ethereum yellowpaper \cite[p.~2]{Buterin2013}. Instead of having participants in an agreement rely on a trusted authority that makes sure that what is stated in the agreement is executed accordingly, a contract can be written for one of the platforms mentioned in table \ref{tab:contract-platforms}. The proper execution of the agreement is then guaranteed by the computational power of the network behind this platform. One huge benefit of this approach is that the agreement can not simply be altered once it has been published on the blockchain, unless an upgrade mechanism is specifically built into the contract, for example by delegating to a contract address that ca be changed.
+
+An example for how smart contracts can offer benefits in the medical field has been explored by Azaria et al., with the development of the system \emph{MedRec} \cite{azaria2016medrec}. In this work, an application is built which manages patient's medical records through SQL queries which are stored on the blockchain. 
+
+Another use case are web applications that utilize cryptocurrencies as a reward or penalty system for users, or a decentralized online exchange. An instance of the former will be discussed in the next section, a cryptocurrency sportsbetting app.
+\section*{Cost of Code Execution}
+Since the network behind Ethereum consists of miners that want to make a profit by receiving \emph{ether} for their work, code execution on the network costs actual money. The unit by which this is measured in the Ethereum space is \emph{gas}. The cost of different instructions varies, reading data from a contract is usually free, but writing variables to the blockchain can be quite costly. This needs to be considered when writing a contract, to ensure maximum efficiency, and no unnecessary gas leaks.
+
+% This section needs to be put further down in the document, to the section about implementation and experimentation
+\section{Practical Implementation of Smart Contracts in an App} 
+As part of a semester project, a web app has been developed to serve as a platform for placing bets on the results of various sports games. The framework that has been used for this is \emph{Angular} in combination with TypeScript and the web3 Ethereum JavaScript API. The front-end was built using a template called "Material" by Creative Tim. The back-end was realized using the Solidity programming language for the definition of contract parameters and methods, and the Truffle Framework to manage it all. \emph{Ganache}, which is part of the Truffle Suite, provides a local blockchain, which served in this project for testing, deploying and debugging the system.
+\section*{Structure of the Contracts}
+The contracts for this app are split into three parts, a \emph{Betting Factory}, a \emph{Game Manager} and a \emph{Bet Manager}. All contracts inherit from the \emph{Ownable} contract, which ensures that certain methods can only be called by the creator of the contract, such as creating a new game for placing bets, or changing the state of a game. Data structures for a game have been implemented in the \emph{Game Manager}, data structures for bets in the \emph{Betting Factory}.
+\section*{Design Choices}
+\label{sec:design_choices}
+Since programming in Solidity involves thinking about the cost of code execution, some key concepts needed to be used in order to make sure no unnecessary \emph{gas} is used, thus wasting money in the form of \emph{ether}. \emph{Gas} is a unit which measures the cost of specific instructions of the EVM. The contracts have to be created in such a way, that a minimum amount of information is stored on the blockchain, as those instructions are the most expensive. One also needs to make sure that the code is not bloated and contains redundant instructions, since this would increase the cost of deploying the contract to the network. Furthermore, when coding smart contracts, it is especially important to make sure that no leaks of \emph{ether} can occur, due to sloppy implementations and lack of testing, which is a common problem for developers who come from traditional programming and are not used to dealing with money as an integer directly in a program \cite{delmolino2016step}.
+
+One major issue is that the application would not be user friendly anymore if the contracts are not designed with those points in mind because in the end the user of the system has to pay the fees that result from method calls of the contract. The way the Ethereum Network is set up, a user can decide independently how much they want to spend for the \emph{gas} on a transaction such as a method call of a contract. This is called the \emph{gas price} \cite[p.~7]{Buterin2013}. However, since transactions have to compete to get included in the next block, miners will only chose transactions with a certain minimum \emph{gas price}. This price depends on the load of the network.
+
+\section*{Critical Issues and Security Bugs}
+The proper execution of a contract hinges on the integrity of the Ethereum blockchain. While it is a very robust system, as many existing applications using smart contracts have shown \cite{chohan2017leisures}, there are still some major risks and security concerns to keep in mind when developing a decentralized application. Those security issues come, for instance, from uncertainty of transaction ordering, false timestamps (due to malicious miners) or from mishandling exceptions. In the following table the most common security bugs are listed, with a short description of the cause, and an example of a countermeasure that can be taken in order to prevent the bug from being exploited.
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{ | l |  l | r | }
+		\hline
+		\multicolumn{3}{ | c | }{\textbf{Common Security Bugs in Smart Contracts}} \\ \hline
+		\emph{Bug name} & \emph{Caused By} & \emph{Countermeasures} \\ \hline 
+		\begin{tabular}{ l } Transaction-Ordering \\ Dependence \end{tabular}
+		& 
+		\begin{tabular}{ l } Two transactions in  the \\  same block invoking \\ the same contract \end{tabular} 
+		& 
+		\begin{tabular}{ r } Guarded transactions, \\ Locking \end{tabular} \\ \hline
+		\begin{tabular}{ l } Timestamp Dependence \end{tabular} & 
+		\begin{tabular}{ l } Malicious miners sending \\ manipulated timestamps \end{tabular}
+		&
+		\begin{tabular}{ r } Deterministic \\ timestamps \end{tabular} \\ \hline
+		\begin{tabular}{ l } Mishandled Exceptions \end{tabular} & 
+		\begin{tabular}{ l } Not validating \\ return values \end{tabular}
+		& 
+		\begin{tabular}{ r } Better exception \\ handling \end{tabular} \\ \hline
+		\begin{tabular}{ l } Reentrancy \\ Vulnerability \end{tabular}
+		&
+		\begin{tabular}{ l } Multiple calls exploiting \\ an intermediate state \end{tabular}
+		&
+		\begin{tabular}{ l } Reentrancy Detection \end{tabular} \\
+		\hline
+	\end{tabular}
+	\caption{\label{tab:security-bugs}Typical security issues in decentralized apps \cite{luu2016making}.}
+\end{table}
+\\
+The most common of these bugs is, according to an analysis conducted with the the security scanning tool \emph{Oyente} \cite[p.~11]{luu2016making}, the \emph{mishandled exception}. In this analysis, out of a sample of 19.366 contracts, 27.9\% were flagged by the tool. This bug is followed by \emph{transaction-ordering dependence} (15.7\%), \emph{reentrancy handling} and the least common bug, \emph{timestamp dependence}. One of these bugs, despite not being very prevalent in the sample, has caused a great amount of financial damage in the past, in the infamous  "The DAO" hack \cite{thedao2017}. At fault was the \emph{reentrancy handling} bug. The DAO was a decentralized autonomous organization for crowdfunding, managing around 12.7 million ether in user funds. As a result of the exploit, 3.6 million ether were stolen, valued at the time at around \$70 million. The lost funds were later returned by forking the entire Ethereum blockchain, which was the cause for a very heated debate about the fundamentals of blockchain (immutability, irreversibility). However, the majority of users agreed on this change. As a result the current, most widely used version of Ethereum is the one where the funds have been returned.
+
+Occurrences like this demonstrate just how important it is to thoroughly test for security vulnerabilities before deploying smart contracts to a public blockchain. If funds are lost, usually they can never be returned to the users. In the case of the DAO it was simply the huge amount of lost funds and the vast media attention that caused the Ethereum developers to take action and reverse the theft. 
+
+\section{Security and Trust in the Current State of the System}
+One major weakness that stands out in the web app, is the question of trust. The idea behind decentralized apps is to distribute trust across nodes and build a consensus this way. However, in the system at hand, there is still a single point of control, namely the power to create games that users can bet on, and to enter the final results, which ultimately determine the outcome of bets. This is done by specific methods that can only be called by the creators of the contract. While the creators of this contract, the administrators, don't have direct access to user's funds they can still manipulate and exploit this system for personal gain by providing untruthful game results.
+
+This key issue needs to be addressed by delegating the authority over deciding what the results are to a diverse set of independent sources, so called \emph{blockchain oracles}.

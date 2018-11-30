@@ -1,0 +1,265 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{azaria2016medrec}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=1a416c6475bab05c871108934e170654}{%
+           family={Azaria},
+           familyi={A\bibinitperiod},
+           given={Asaph},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2a75d20f427fa2c26b07b3652d595571}{%
+           family={Ekblaw},
+           familyi={E\bibinitperiod},
+           given={Ariel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8276ae911f51ceabd94fe50534f17adf}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Thiago},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7aaeaf6869aa48ec86c6c7eae4872b96}{%
+           family={Lippman},
+           familyi={L\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a8b7c71b7326afa18cbb26f9c62ab7e8}
+      \strng{fullhash}{b52875f324e7442ccf34bfe3412ca440}
+      \strng{bibnamehash}{a8b7c71b7326afa18cbb26f9c62ab7e8}
+      \strng{authorbibnamehash}{a8b7c71b7326afa18cbb26f9c62ab7e8}
+      \strng{authornamehash}{a8b7c71b7326afa18cbb26f9c62ab7e8}
+      \strng{authorfullhash}{b52875f324e7442ccf34bfe3412ca440}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Open and Big Data (OBD), International Conference on}
+      \field{title}{Medrec: Using blockchain for medical data access and permission management}
+      \field{year}{2016}
+      \field{pages}{25\bibrangedash 30}
+      \range{pages}{6}
+    \endentry
+    \entry{Buterin2013}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=850981945102d0f671b6762173c8988a}{%
+           family={Buterin},
+           familyi={B\bibinitperiod},
+           given={Vitalik},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{850981945102d0f671b6762173c8988a}
+      \strng{fullhash}{850981945102d0f671b6762173c8988a}
+      \strng{bibnamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authorbibnamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authornamehash}{850981945102d0f671b6762173c8988a}
+      \strng{authorfullhash}{850981945102d0f671b6762173c8988a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Ethereum Yellow Paper}
+      \field{type}{Yellow Paper}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://ethereum.github.io/yellowpaper/paper.pdf
+      \endverb
+      \verb{url}
+      \verb https://ethereum.github.io/yellowpaper/paper.pdf
+      \endverb
+    \endentry
+    \entry{chohan2017leisures}{article}{}
+      \name{author}{1}{}{%
+        {{hash=53ba45b09d48e40af5c4a9137edf8d55}{%
+           family={Chohan},
+           familyi={C\bibinitperiod},
+           given={Usman},
+           giveni={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \strng{fullhash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \strng{bibnamehash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \strng{authorbibnamehash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \strng{authornamehash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \strng{authorfullhash}{53ba45b09d48e40af5c4a9137edf8d55}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Leisures of Blockchains: Exploratory Analysis}
+      \field{year}{2017}
+    \endentry
+    \entry{delmolino2016step}{thesis}{}
+      \name{author}{5}{}{%
+        {{hash=a8058789d356172db5cf7b7c3610a002}{%
+           family={Delmolino},
+           familyi={D\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=7752d5accf605bc96af6c2428e8bc2af}{%
+           family={Arnett},
+           familyi={A\bibinitperiod},
+           given={Mitchell},
+           giveni={M\bibinitperiod}}}%
+        {{hash=891826ce375183822ff8ec8a81b87565}{%
+           family={Kosba},
+           familyi={K\bibinitperiod},
+           given={Ahmed},
+           giveni={A\bibinitperiod}}}%
+        {{hash=403caa7edb7a2770a6a678a46079869e}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=edb728c71cdde40b9afd81bb8c9e733c}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{aade7bcc4aa88704f71ea8f480ad558b}
+      \strng{fullhash}{5a57c3020eaaeccd1c9ec261e944919b}
+      \strng{bibnamehash}{aade7bcc4aa88704f71ea8f480ad558b}
+      \strng{authorbibnamehash}{aade7bcc4aa88704f71ea8f480ad558b}
+      \strng{authornamehash}{aade7bcc4aa88704f71ea8f480ad558b}
+      \strng{authorfullhash}{5a57c3020eaaeccd1c9ec261e944919b}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Financial Cryptography and Data Security}
+      \field{title}{Step by step towards creating a safe smart contract: Lessons and insights from a cryptocurrency lab}
+      \field{year}{2016}
+      \field{pages}{79\bibrangedash 94}
+      \range{pages}{16}
+    \endentry
+    \entry{thedao2017}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e87caa1f1e5b3c455e73aba0e74032e4}{%
+           family={Falkon},
+           familyi={F\bibinitperiod},
+           given={Samuel},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \strng{fullhash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \strng{bibnamehash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \strng{authorbibnamehash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \strng{authornamehash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \strng{authorfullhash}{e87caa1f1e5b3c455e73aba0e74032e4}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Story of the DAO - Its History and Consequences}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://medium.com/swlh/the-story-of-the-dao-its-history-and-consequences-71e6a8a551ee
+      \endverb
+      \verb{url}
+      \verb https://medium.com/swlh/the-story-of-the-dao-its-history-and-consequences-71e6a8a551ee
+      \endverb
+    \endentry
+    \entry{luu2016making}{thesis}{}
+      \name{author}{5}{}{%
+        {{hash=52215df94fa3df053a9ff37eef735b8c}{%
+           family={Luu},
+           familyi={L\bibinitperiod},
+           given={Loi},
+           giveni={L\bibinitperiod}}}%
+        {{hash=7da7ade810ce8097344056432598466f}{%
+           family={Chu},
+           familyi={C\bibinitperiod},
+           given={Duc-Hiep},
+           giveni={D\bibinithyphendelim H\bibinitperiod}}}%
+        {{hash=234c9dce86ea0b40f65a0a8fc031734c}{%
+           family={Olickel},
+           familyi={O\bibinitperiod},
+           given={Hrishi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bd8f6be2fb6f2a6af3303717f7903800}{%
+           family={Saxena},
+           familyi={S\bibinitperiod},
+           given={Prateek},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9e9e7df3a02984f833bbf26e3109583a}{%
+           family={Hobor},
+           familyi={H\bibinitperiod},
+           given={Aquinas},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{165c838c09554764812a7da705b7471b}
+      \strng{fullhash}{48f1f55f0c43ba90c343d7c8998dd6d7}
+      \strng{bibnamehash}{165c838c09554764812a7da705b7471b}
+      \strng{authorbibnamehash}{165c838c09554764812a7da705b7471b}
+      \strng{authornamehash}{165c838c09554764812a7da705b7471b}
+      \strng{authorfullhash}{48f1f55f0c43ba90c343d7c8998dd6d7}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security}
+      \field{title}{Making smart contracts smarter}
+      \field{year}{2016}
+      \field{pages}{254\bibrangedash 269}
+      \range{pages}{16}
+    \endentry
+    \entry{Nakamoto2009}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=1977190f018b398e43ede3de043de8ea}{%
+           family={Nakamoto},
+           familyi={N\bibinitperiod},
+           given={Satoshi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{fullhash}{1977190f018b398e43ede3de043de8ea}
+      \strng{bibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorbibnamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authornamehash}{1977190f018b398e43ede3de043de8ea}
+      \strng{authorfullhash}{1977190f018b398e43ede3de043de8ea}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Bitcoin: A Peer-to-Peer Electronic Cash System}
+      \field{type}{White Paper}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://bitcoin.org/bitcoin.pdf
+      \endverb
+      \verb{url}
+      \verb https://bitcoin.org/bitcoin.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

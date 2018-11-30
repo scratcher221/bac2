@@ -1,0 +1,66 @@
+%%% File encoding: UTF-8
+%% äöüÄÖÜß  <-- no German Umlauts here? Use an UTF-8 compatible editor!
+
+%%% Magic comments for setting the correct parameters in compatible IDEs
+% !TeX encoding = utf8
+% !TeX program = pdflatex 
+% !TeX spellcheck = en_US
+% !BIB program = biber
+
+\documentclass[bachelor,english]{hgbthesis}
+% Permissible options in [..]: 
+%   Type of work: diploma, master (default), bachelor, internship 
+%   Main language: german, english (default)
+%%%----------------------------------------------------------
+
+\RequirePackage[utf8]{inputenc}		% Remove when using lualatex or xelatex entfernen!
+\usepackage[backend=biber]{biblatex}
+
+\graphicspath{{images/}}    % location of images and graphics
+\logofile{logo}				% logo file = images/logo.pdf (use \logofile{} for no logo)
+\bibliography{references}  	% name of bibliography file (references.bib)
+
+%%%----------------------------------------------------------
+% Title page entries
+%%%----------------------------------------------------------
+
+%%% Entries for ALL types of work: --------------------------
+\title{Using Blockchain Oracles as a Reliable Source of Information for a Cryptocurrency Sportsbetting App}
+\author{David Mitterlehner}
+\programname{Mobile Computing}
+\placeofstudy{Hagenberg}
+\dateofsubmission{2018}{10}{23}	% {YYYY}{MM}{DD}
+
+%%% Entries for Bachelor theses only: -----------------------
+\thesisnumber{1610237018-A}   %e.g. 1310238045-A  
+% (Stud-ID, A = 1st Bachelor thesis)
+\semester{Fall Semester 2018} 	% Fall/Spring Semester YYYY
+\coursetitle{Secure Mobile Systems} 
+\advisor{Dr. Erik Sonnleitner}
+
+%%%----------------------------------------------------------
+\begin{document}
+%%%----------------------------------------------------------
+
+%%%----------------------------------------------------------
+\frontmatter							% title part (roman page numbers)
+%%%----------------------------------------------------------
+
+\maketitle
+\tableofcontents
+
+\include{front/abstract}
+
+%%%----------------------------------------------------------
+\mainmatter          			% main part (arabic page numbers)
+%%%----------------------------------------------------------
+
+\include{chapters/theapp}
+\include{chapters/related_work}
+
+%%%----------------------------------------------------------
+\MakeBibliography                        				% references
+%%%----------------------------------------------------------
+
+\end{document}
+%%%----------------------------------------------------------
