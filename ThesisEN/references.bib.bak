@@ -60,11 +60,4 @@
   organization={IEEE}
 }
 
-@Online{oyentegithub,
-  author = {Luu et al.},
-  title  = {Oyente Github},
-  year   = {2018},
-  url    = {https://github.com/melonproject/oyente},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}

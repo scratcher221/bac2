@@ -25,6 +25,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Security Tools for Smart Contracts}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{8}{chapter*.6}
+\contentsline {chapter}{References}{9}{chapter*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{8}{section*.7}
+\contentsline {section}{Literature}{9}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Online sources}{9}{section*.9}
