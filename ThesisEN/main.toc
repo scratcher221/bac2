@@ -25,8 +25,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Security Tools for Smart Contracts}{7}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{9}{chapter*.7}
+\contentsline {chapter}{\numberline {3}The Problem of Trust and Centralization}{9}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{9}{section*.8}
+\contentsline {section}{\numberline {3.1}Why Centralized Control is Undesirable in this Project}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Online sources}{9}{section*.9}
+\contentsline {section}{\numberline {3.2}The Concept of Blockchain Oracles}{9}{section.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{10}{chapter*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literature}{10}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Online sources}{10}{section*.9}

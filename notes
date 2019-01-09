@@ -1,0 +1,55 @@
+Interacting with the DApp:
+
+- Start WebStorm
+- Start Ganache
+- truffle console > compile > migrate --reset
+- ng serve
+- Start Firefox
+- Connect MetaMask to http://192.168.0.108:7545
+    - For some reason whenever you restart everything (ganache, firefox, ...), MetaMask cannot connect to the local network anymore
+    - To fix this, delete the saved Network from the "Networks" selection by clicking the "x" on the right next to the name, and create it new.
+    - Click on the Account icon -> Settings -> New Network -> http://192.168.0.108:7545
+- Go to localhost:4200
+
+Creating Test Games:
+
+- In "truffle console" do:
+- BetManager.deployed().then(instance => { return instance.createTestGames(); });
+
+Setting Game Results:
+
+- BetManager.deployed().then(instance => { return instance.setGameResult(0, 1); });
+- 0 ist game_id, 1 is GameResult (HOME)
+
+Debugging:
+
+- Inspecting variables:
+BetManager.deployed().then(instance => { return instance.getmActiveGames.call(); }).then(function(value){return value.toNumber()});
+
+Angular compiling issues:
+
+In package.json:
+
+- truffle-contract can't be higher than 3.0.7, otherwise compiling fails, e.g. with version 4.0.0
+- web3 also can't be higher than 0.20.6 (otherwise compiling fails -> can't resolve https ... )
+
+Docker:
+
+Start daemon: sudo systemctl start docker
+List images: sudo docker images
+Start container: sudo docker run --privileged -i -t luongnguyen/oyente:version2
+Save container: sudo docker commit [container_id] luongnguyen/oyente:versionX
+
+Oyente:
+
+- Analyzing a contract:
+- python oyente.py -s Contract.sol
+- Analyzing a bytecode contract:
+- python oyente.py -s ByteCode -b
+
+TODO:
+
+- When a game is already finished one can still bet on it by entering the URL directly, e.g.: http://localhost:4200/details/0
+    - Need to check for GameState before allowing a "Submit Wager" action
+- Implement Oracle to fetch GameResults via Web API (maybe sportradar.com?)
+

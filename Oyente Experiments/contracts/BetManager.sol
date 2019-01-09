@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.0;
 import "./BettingFactory.sol";
 import "./GameManager.sol";
 
@@ -12,7 +13,7 @@ contract BetManager is GameManager {
     require(msg.sender == mBets[_betId].creator && mBets[_betId].betStatus == BetStatus.VALID);
     //require that the user has actually won the bet.
     require(mBets[_betId].wageredResult == mGames[mBets[_betId].gameId].result);
-    address receiver = mBets[_betId].creator;
+    address payable receiver = mBets[_betId].creator;
 
     //compute total sum of shares for that bet
     uint totalAmountHome = 0;
@@ -53,9 +54,7 @@ contract BetManager is GameManager {
     //uint shareRemainder = (payoutFactor * sumOnLostOptions) % 1000;
 
     uint payout = mBets[_betId].amount + share;
-    if (!receiver.send(payout)) {
-      throw;
-    }
+    require(receiver.send(payout));
     emit Withdrawal(receiver, payout);
     return true;
   }

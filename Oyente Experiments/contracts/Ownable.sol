@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.0;
 
 /**
  * @title Ownable

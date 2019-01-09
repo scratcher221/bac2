@@ -1,4 +1,5 @@
-pragma solidity ^0.4.24;
+pragma experimental ABIEncoderV2;
+pragma solidity ^0.5.0;
 import "./Ownable.sol";
 
 /// @title A contract, which implements the core functionality of the betting webapp
@@ -24,7 +25,7 @@ contract BettingFactory is Ownable {
   struct Bet {
     uint gameId;
     uint amount;
-    address creator;
+    address payable creator;
     GameResult wageredResult;
     BetStatus betStatus;
   }
@@ -46,7 +47,7 @@ contract BettingFactory is Ownable {
   }
 
   /// @notice Gets all bets that have been placed by a specific address
-  function getBetsByCreator(address _creator) external view returns(uint[]) {
+  function getBetsByCreator(address _creator) external view returns(uint[] memory bets) {
     //count how many bet its there are
     uint j = 0;
     for (uint i=0; i < mBets.length; i++) {
@@ -64,7 +65,6 @@ contract BettingFactory is Ownable {
         j++;
       }
     }
-
     return bets;
     //uint[] memory placedBets = new uint[](mBets.length);
     //uint j=0;
@@ -78,7 +78,7 @@ contract BettingFactory is Ownable {
   }
 
   /// @notice Returns ids for bets that were placed on a game
-  function getBetsForGameId(uint _gameId) public view returns(uint[]) {
+  function getBetsForGameId(uint _gameId) public view returns(uint[] memory bets) {
     //count how many bet its there are
     uint j = 0;
     for (uint i=0; i < mBets.length; i++) {
@@ -96,9 +96,7 @@ contract BettingFactory is Ownable {
         j++;
       }
     }
-
     return bets;
-
     //uint[] memory placedBets = new uint[](mBets.length);
     //uint j=0;
     //for (uint i=0; i < mBets.length; i++) {
