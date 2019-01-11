@@ -47,6 +47,19 @@ Oyente:
 - Analyzing a bytecode contract:
 - python oyente.py -s ByteCode -b
 
+Oraclize:
+
+Make Oraclize work with Ganache:
+
+- Always use the same mnemonic
+- Last Account index: 9
+- Go to /home/david/Smart Contracts/ethereum-bridge
+- Run: ./ethereum-bridge -H 192.168.0.108:7545 -a 9 --dev
+- Add this line to the contract constructor:
+    - OAR = OraclizeAddrResolverI(0x6f485C8BF6fc43eA212E93BBF8ce046C7f1cb475);
+- Run in truffle console: BetManager.deployed().then( instance => { return instance.getDieselPrice(); });
+
+
 TODO:
 
 - When a game is already finished one can still bet on it by entering the URL directly, e.g.: http://localhost:4200/details/0

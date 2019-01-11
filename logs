@@ -8,3 +8,5 @@ REDEEM WIN
 Account balance: 99.8963 ETH
 
 
+Last ethereum-bridge instance:
+ethereum-bridge --instance oracle_instance_20190109T163059.json

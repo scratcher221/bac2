@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.12.20)  3 JAN 2019 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2018.12.20)  11 JAN 2019 03:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1182,7 +1182,8 @@ Package biblatex Info: ... file 'german.lbx' found.
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )) (./main.aux
-(./front/abstract.aux) (./chapters/theapp.aux) (./chapters/related_work.aux))
+(./front/abstract.aux) (./chapters/theapp.aux) (./chapters/related_work.aux)
+(./chapters/trust_and_centralization.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1335,7 +1336,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/logo.pdf, id=61, 269.93045pt x 269.93045pt>
+<images/logo.pdf, id=73, 269.93045pt x 269.93045pt>
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
 Package pdftex.def Info: images/logo.pdf  used on input line 49.
@@ -1354,6 +1355,7 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 10.
 Package tocbasic Info: Using my definition of `\numberline' on input line 12.
 Package tocbasic Info: Using my definition of `\numberline' on input line 22.
 Package tocbasic Info: Using my definition of `\numberline' on input line 28.
+Package tocbasic Info: Using my definition of `\numberline' on input line 34.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1400,9 +1402,9 @@ Chapter 3.
 
 
 
-]
+] [10]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
- [10
+ [11
 
 
 ]
@@ -1411,27 +1413,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
 (./chapters/related_work.aux) (./chapters/trust_and_centralization.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 89E7169DE60BFF5F70B4F5884A9F590A;2374
-(rerunfilecheck)             After:  2BDA430EF6590B6388C02AC6486B4039;3206.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 2BDA430EF6590B6388C02AC6486B4039;3206.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25737 strings out of 492639
- 405255 string characters out of 6135496
- 963848 words of memory out of 5000000
- 29073 multiletter control sequences out of 15000+600000
+ 25744 strings out of 492639
+ 405411 string characters out of 6135496
+ 966644 words of memory out of 5000000
+ 29077 multiletter control sequences out of 15000+600000
  62002 words of font info for 50 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,15n,96p,1315b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1443,10 +1435,10 @@ lic/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr
 /share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts
 /type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt
 10.pfb>
-Output written on main.pdf (15 pages, 262021 bytes).
+Output written on main.pdf (16 pages, 265972 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 42 named destinations out of 1000 (max. 500000)
- 130 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 265 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
