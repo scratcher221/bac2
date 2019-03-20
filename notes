@@ -53,11 +53,15 @@ Make Oraclize work with Ganache:
 
 - Always use the same mnemonic
 - Last Account index: 9
-- Go to /home/david/Smart Contracts/ethereum-bridge
-- Run: ./ethereum-bridge -H 192.168.0.108:7545 -a 9 --dev
+- Run: ethereum-bridge -H 192.168.0.108:7545 -a 9 --dev
+- append --instance latest for loading the latest instance
 - Add this line to the contract constructor:
     - OAR = OraclizeAddrResolverI(0x6f485C8BF6fc43eA212E93BBF8ce046C7f1cb475);
 - Run in truffle console: BetManager.deployed().then( instance => { return instance.getDieselPrice(); });
+
+Issues with Oraclize, ethereum-bridge and Ganache:
+
+- Making an Oraclize query only seems to work once for every contract migration. Once a request has been made, trying it for a second time produces a VM Exception (revert) - the temporary solution is to run migrate --reset
 
 
 TODO:

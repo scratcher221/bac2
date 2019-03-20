@@ -19,6 +19,66 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{pagesigner}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b2c398323074b1c5746434bd904c6f14}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Dan\bibnamedelima Smith},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{fullhash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{bibnamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authorbibnamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authornamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authorfullhash}{b2c398323074b1c5746434bd904c6f14}
+      \field{extraname}{1}
+      \field{sortinit}{a}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{PageSigner}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://tlsnotary.org/pagesigner.html
+      \endverb
+      \verb{url}
+      \verb https://tlsnotary.org/pagesigner.html
+      \endverb
+    \endentry
+    \entry{tlsnotarywhitepaper}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=b2c398323074b1c5746434bd904c6f14}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={Dan\bibnamedelima Smith},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{fullhash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{bibnamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authorbibnamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authornamehash}{b2c398323074b1c5746434bd904c6f14}
+      \strng{authorfullhash}{b2c398323074b1c5746434bd904c6f14}
+      \field{extraname}{2}
+      \field{sortinit}{a}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TLSNotary - a mechanism for independently audited https sessions}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://tlsnotary.org/TLSNotary.pdf
+      \endverb
+      \verb{url}
+      \verb https://tlsnotary.org/TLSNotary.pdf
+      \endverb
+    \endentry
     \entry{oyentegithub}{online}{}
       \name{author}{1}{}{%
         {{hash=51f08bb2c16d696a7973345044d78386}{%
@@ -35,6 +95,7 @@
       \strng{authorbibnamehash}{51f08bb2c16d696a7973345044d78386}
       \strng{authornamehash}{51f08bb2c16d696a7973345044d78386}
       \strng{authorfullhash}{51f08bb2c16d696a7973345044d78386}
+      \field{extraname}{3}
       \field{sortinit}{a}
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
@@ -286,6 +347,158 @@
       \endverb
       \verb{url}
       \verb https://bitcoin.org/bitcoin.pdf
+      \endverb
+    \endentry
+    \entry{androidproof}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e996b3ae1b2d5c9a9fb10edeb910d3f7}{%
+           family={Oraclize},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{fullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{bibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorbibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authornamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorfullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \field{extraname}{1}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Android Proof: Authenticated Data Gathering using Android Hardware Attestation and SafetyNet}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://provable.xyz/papers/android_proof-rev2.pdf
+      \endverb
+      \verb{url}
+      \verb https://provable.xyz/papers/android_proof-rev2.pdf
+      \endverb
+    \endentry
+    \entry{oraclizedoc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e996b3ae1b2d5c9a9fb10edeb910d3f7}{%
+           family={Oraclize},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{fullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{bibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorbibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authornamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorfullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \field{extraname}{2}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Oraclize Documentation}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://docs.oraclize.it/
+      \endverb
+      \verb{url}
+      \verb https://docs.oraclize.it/
+      \endverb
+    \endentry
+    \entry{oraclizeproofverify}{online}{}
+      \name{author}{1}{}{%
+        {{hash=e996b3ae1b2d5c9a9fb10edeb910d3f7}{%
+           family={Oraclize},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{fullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{bibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorbibnamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authornamehash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \strng{authorfullhash}{e996b3ae1b2d5c9a9fb10edeb910d3f7}
+      \field{extraname}{3}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{proof-verification-tool}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/oraclize/proof-verification-tool
+      \endverb
+      \verb{url}
+      \verb https://github.com/oraclize/proof-verification-tool
+      \endverb
+    \endentry
+    \entry{orisiwhitepaper}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8fc9bbd2eb49ecdaed55d9a81b84f475}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={Orisi},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \strng{fullhash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \strng{bibnamehash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \strng{authorbibnamehash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \strng{authornamehash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \strng{authorfullhash}{8fc9bbd2eb49ecdaed55d9a81b84f475}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Orisi White Paper}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://github.com/orisi/wiki/wiki/Orisi-White-Paper
+      \endverb
+      \verb{url}
+      \verb https://github.com/orisi/wiki/wiki/Orisi-White-Paper
+      \endverb
+    \endentry
+    \entry{zhangtown}{thesis}{}
+      \name{author}{5}{}{%
+        {{hash=ae021641a8f85fd2607152ab99ed115b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Fan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=7474911b04a50b4509185dc72ff47b21}{%
+           family={Cecchetti},
+           familyi={C\bibinitperiod},
+           given={Ethan},
+           giveni={E\bibinitperiod}}}%
+        {{hash=60823e0d24e1c990fd8b31e16b3b85d6}{%
+           family={Croman},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c865ec9228baea73d3d6c2c3faa7bcc7}{%
+           family={Juels},
+           familyi={J\bibinitperiod},
+           given={Ari},
+           giveni={A\bibinitperiod}}}%
+        {{hash=edb728c71cdde40b9afd81bb8c9e733c}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Elaine},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Cornell University}%
+      }
+      \strng{namehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{fullhash}{4e724dbc4f1612b19e21157ba4685fc9}
+      \strng{bibnamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authorbibnamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authornamehash}{b34ec7ee85af98aed1e55ed4599fbd0e}
+      \strng{authorfullhash}{4e724dbc4f1612b19e21157ba4685fc9}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Town Crier: An Authenticated Data Feed for Smart Contracts}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb IACR ePrint
       \endverb
     \endentry
   \enddatalist

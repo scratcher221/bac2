@@ -99,7 +99,7 @@
   url    = {https://tlsnotary.org/pagesigner.html},
 }
 
-@Online{,
+@Online{a,
   author = {Oraclize},
   title  = {Android Proof: Authenticated Data Gathering using Android Hardware Attestation and SafetyNet},
   year   = {2018},

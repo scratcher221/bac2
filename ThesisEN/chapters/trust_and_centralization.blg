@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.12
+[0] Config.pm:307> INFO - Logfile is 'trust_and_centralization.blg'
+[24] biber:315> INFO - === Wed Mar 20, 2019, 17:21:30
+[66] Utils.pm:209> ERROR - Cannot find control file 'trust_and_centralization.bcf'! - Did latex run successfully on your .tex file before you ran biber?
+[66] Biber.pm:114> INFO - ERRORS: 1
