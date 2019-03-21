@@ -35,12 +35,26 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Oraclize}{10}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Frontend Implementation with Vue.js}{16}{chapter.4}% 
+\contentsline {subsection}{\numberline {3.3.2}Astraea}{16}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Redesigning the Frontend}{16}{section.4.1}% 
+\contentsline {subsection}{\numberline {3.3.3}ChainLink}{16}{subsection.3.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{17}{chapter*.12}% 
+\contentsline {section}{\numberline {3.4}Implementation of an Oracle in the App}{19}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{17}{section*.13}% 
+\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{20}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Online sources}{17}{section*.14}% 
+\contentsline {section}{\numberline {4.1}Hardware Oracles}{20}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Software Oracles}{20}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{20}{section.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{20}{section.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{21}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{References}{22}{chapter*.15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Literature}{22}{section*.16}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Online sources}{22}{section*.17}% 

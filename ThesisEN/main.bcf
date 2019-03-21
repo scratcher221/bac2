@@ -2027,7 +2027,13 @@
     <bcf:citekey order="30">androidproof</bcf:citekey>
     <bcf:citekey order="31">androidproof</bcf:citekey>
     <bcf:citekey order="32">androidproof</bcf:citekey>
-    <bcf:citekey order="33">oraclizeproofverify</bcf:citekey>
+    <bcf:citekey order="33">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="34">oraclizeproofverify</bcf:citekey>
+    <bcf:citekey order="35">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="36">astraea</bcf:citekey>
+    <bcf:citekey order="37">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="38">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="39">chainlinkdoc</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

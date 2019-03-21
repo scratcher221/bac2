@@ -59,6 +59,9 @@
            prefix={et},
            prefixi={e\bibinitperiod}}}%
       }
+      \list{institution}{1}{%
+        {TLS Notary Group}%
+      }
       \strng{namehash}{b2c398323074b1c5746434bd904c6f14}
       \strng{fullhash}{b2c398323074b1c5746434bd904c6f14}
       \strng{bibnamehash}{b2c398323074b1c5746434bd904c6f14}
@@ -79,6 +82,33 @@
       \verb https://tlsnotary.org/TLSNotary.pdf
       \endverb
     \endentry
+    \entry{astraea}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=489608e4131625813680aa01c9d75c1b}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={John\bibnamedelima Adler},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of Toronto}%
+      }
+      \strng{namehash}{489608e4131625813680aa01c9d75c1b}
+      \strng{fullhash}{489608e4131625813680aa01c9d75c1b}
+      \strng{bibnamehash}{489608e4131625813680aa01c9d75c1b}
+      \strng{authorbibnamehash}{489608e4131625813680aa01c9d75c1b}
+      \strng{authornamehash}{489608e4131625813680aa01c9d75c1b}
+      \strng{authorfullhash}{489608e4131625813680aa01c9d75c1b}
+      \field{extraname}{3}
+      \field{sortinit}{a}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Astraea: A Decentralized Blockchain Oracle}
+      \field{year}{2018}
+    \endentry
     \entry{oyentegithub}{online}{}
       \name{author}{1}{}{%
         {{hash=51f08bb2c16d696a7973345044d78386}{%
@@ -95,13 +125,13 @@
       \strng{authorbibnamehash}{51f08bb2c16d696a7973345044d78386}
       \strng{authornamehash}{51f08bb2c16d696a7973345044d78386}
       \strng{authorfullhash}{51f08bb2c16d696a7973345044d78386}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{a}
       \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Oyente Github}
-      \field{year}{2018}
+      \field{year}{2019}
       \verb{urlraw}
       \verb https://github.com/melonproject/oyente
       \endverb
@@ -179,13 +209,41 @@
       \verb https://ethereum.github.io/yellowpaper/paper.pdf
       \endverb
     \endentry
-    \entry{chohan2017leisures}{article}{}
+    \entry{chainlinkdoc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=be16d53ad6a0ba49e10da409e0f260e8}{%
+           family={ChainLink},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \strng{fullhash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \strng{bibnamehash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \strng{authorbibnamehash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \strng{authornamehash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \strng{authorfullhash}{be16d53ad6a0ba49e10da409e0f260e8}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Chainlink Documentation}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://docs.chain.link/docs/
+      \endverb
+      \verb{url}
+      \verb https://docs.chain.link/docs/
+      \endverb
+    \endentry
+    \entry{chohan2017leisures}{thesis}{}
       \name{author}{1}{}{%
         {{hash=53ba45b09d48e40af5c4a9137edf8d55}{%
            family={Chohan},
            familyi={C\bibinitperiod},
            given={Usman},
            giveni={U\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of New South Wales}%
       }
       \strng{namehash}{53ba45b09d48e40af5c4a9137edf8d55}
       \strng{fullhash}{53ba45b09d48e40af5c4a9137edf8d55}
@@ -199,6 +257,15 @@
       \field{labeltitlesource}{title}
       \field{title}{The Leisures of Blockchains: Exploratory Analysis}
       \field{year}{2017}
+      \verb{eprint}
+      \verb SSRN papers
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3084411
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3084411
+      \endverb
     \endentry
     \entry{delmolino2016step}{thesis}{}
       \name{author}{5}{}{%
@@ -227,6 +294,9 @@
            familyi={S\bibinitperiod},
            given={Elaine},
            giveni={E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Springer}%
       }
       \list{organization}{1}{%
         {Springer}%
@@ -265,6 +335,7 @@
       \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{Medium}
       \field{title}{The Story of the DAO - Its History and Consequences}
       \field{year}{2017}
       \verb{urlraw}
@@ -301,6 +372,9 @@
            familyi={H\bibinitperiod},
            given={Aquinas},
            giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {National University of Singapore}%
       }
       \list{organization}{1}{%
         {ACM}%
@@ -393,7 +467,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Oraclize Documentation}
-      \field{year}{2018}
+      \field{year}{2019}
       \verb{urlraw}
       \verb https://docs.oraclize.it/
       \endverb
@@ -419,7 +493,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{proof-verification-tool}
-      \field{year}{2018}
+      \field{year}{2019}
       \verb{urlraw}
       \verb https://github.com/oraclize/proof-verification-tool
       \endverb
@@ -446,7 +520,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Orisi White Paper}
-      \field{year}{2018}
+      \field{year}{2019}
       \verb{urlraw}
       \verb https://github.com/orisi/wiki/wiki/Orisi-White-Paper
       \endverb

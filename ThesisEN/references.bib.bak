@@ -13,32 +13,42 @@
 	year={2009},
 	url={https://bitcoin.org/bitcoin.pdf}
 }
-@thesis{delmolino2016step,
-  title={Step by step towards creating a safe smart contract: Lessons and insights from a cryptocurrency lab},
-  author={Delmolino, Kevin and Arnett, Mitchell and Kosba, Ahmed and Miller, Andrew and Shi, Elaine},
-  booktitle={International Conference on Financial Cryptography and Data Security},
-  pages={79--94},
-  year={2016},
-  organization={Springer}
+
+@Thesis{delmolino2016step,
+  author       = {Delmolino, Kevin and Arnett, Mitchell and Kosba, Ahmed and Miller, Andrew and Shi, Elaine},
+  title        = {Step by step towards creating a safe smart contract: Lessons and insights from a cryptocurrency lab},
+  institution  = {Springer},
+  year         = {2016},
+  pages        = {79--94},
+  booktitle    = {International Conference on Financial Cryptography and Data Security},
+  organization = {Springer},
 }
-@thesis{luu2016making,
-  title={Making smart contracts smarter},
-  author={Luu, Loi and Chu, Duc-Hiep and Olickel, Hrishi and Saxena, Prateek and Hobor, Aquinas},
-  booktitle={Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
-  pages={254--269},
-  year={2016},
-  organization={ACM}
+
+@Thesis{luu2016making,
+  author       = {Luu, Loi and Chu, Duc-Hiep and Olickel, Hrishi and Saxena, Prateek and Hobor, Aquinas},
+  title        = {Making smart contracts smarter},
+  institution  = {National University of Singapore},
+  year         = {2016},
+  pages        = {254--269},
+  booktitle    = {Proceedings of the 2016 ACM SIGSAC Conference on Computer and Communications Security},
+  organization = {ACM},
 }
-@article{chohan2017leisures,
-  title={The Leisures of Blockchains: Exploratory Analysis},
-  author={Chohan, Usman},
-  year={2017}
+
+@Thesis{chohan2017leisures,
+  author      = {Chohan, Usman},
+  title       = {The Leisures of Blockchains: Exploratory Analysis},
+  institution = {University of New South Wales},
+  year        = {2017},
+  eprint      = {SSRN papers},
+  url         = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3084411},
 }
-@article{thedao2017,
-    title={The Story of the DAO - Its History and Consequences},
-    author={Samuel Falkon},
-    year={2017},
-    url={https://medium.com/swlh/the-story-of-the-dao-its-history-and-consequences-71e6a8a551ee}
+
+@Article{thedao2017,
+  author  = {Samuel Falkon},
+  title   = {The Story of the DAO - Its History and Consequences},
+  journal = {Medium},
+  year    = {2017},
+  url     = {https://medium.com/swlh/the-story-of-the-dao-its-history-and-consequences-71e6a8a551ee},
 }
 @inproceedings{azaria2016medrec,
   title={Medrec: Using blockchain for medical data access and permission management},
@@ -52,21 +62,21 @@
 @Online{oyentegithub,
   author = {Luu et al.},
   title  = {Oyente Github},
-  year   = {2018},
+  year   = {2019},
   url    = {https://github.com/melonproject/oyente},
 }
 
 @Online{oraclizedoc,
   author = {Oraclize},
   title  = {Oraclize Documentation},
-  year   = {2018},
+  year   = {2019},
   url    = {https://docs.oraclize.it/},
 }
 
 @Online{orisiwhitepaper,
   author = {Orisi Team},
   title  = {Orisi White Paper},
-  year   = {2018},
+  year   = {2019},
   url    = {https://github.com/orisi/wiki/wiki/Orisi-White-Paper},
 }
 
@@ -81,15 +91,16 @@
 @Online{oraclizeproofverify,
   author = {Oraclize},
   title  = {proof-verification-tool},
-  year   = {2018},
+  year   = {2019},
   url    = {https://github.com/oraclize/proof-verification-tool},
 }
 
 @Thesis{tlsnotarywhitepaper,
-  author = {Dan Smith et al.},
-  title  = {TLSNotary - a mechanism for independently audited https sessions},
-  year   = {2014},
-  url    = {https://tlsnotary.org/TLSNotary.pdf},
+  author      = {Dan Smith et al.},
+  title       = {TLSNotary - a mechanism for independently audited https sessions},
+  institution = {TLS Notary Group},
+  year        = {2014},
+  url         = {https://tlsnotary.org/TLSNotary.pdf},
 }
 
 @Online{pagesigner,
@@ -99,11 +110,18 @@
   url    = {https://tlsnotary.org/pagesigner.html},
 }
 
-@Online{,
+@Online{androidproof,
   author = {Oraclize},
   title  = {Android Proof: Authenticated Data Gathering using Android Hardware Attestation and SafetyNet},
   year   = {2018},
   url    = {https://provable.xyz/papers/android_proof-rev2.pdf},
+}
+
+@Thesis{astraea,
+  author      = {John Adler et al.},
+  title       = {Astraea: A Decentralized Blockchain Oracle},
+  institution = {University of Toronto},
+  year        = {2018},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

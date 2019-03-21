@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.18)  20 MAR 2019 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.2.18)  21 MAR 2019 02:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,8 +1184,8 @@ Package biblatex Info: ... file 'german.lbx' found.
 File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )) (./main.aux
 (./front/abstract.aux) (./chapters/theapp.aux) (./chapters/related_work.aux)
-(./chapters/trust_and_centralization.aux)
-(./chapters/frontend_implementation.aux))
+(./chapters/trust_and_centralization.aux) (./chapters/types_of_oracles.aux)
+(./chapters/conclusion_and_discussion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1338,7 +1338,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/logo.pdf, id=89, 269.93045pt x 269.93045pt>
+<images/logo.pdf, id=117, 269.93045pt x 269.93045pt>
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
 Package pdftex.def Info: images/logo.pdf  used on input line 49.
@@ -1357,8 +1357,9 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 10.
 Package tocbasic Info: Using my definition of `\numberline' on input line 12.
 Package tocbasic Info: Using my definition of `\numberline' on input line 22.
 Package tocbasic Info: Using my definition of `\numberline' on input line 28.
-Package tocbasic Info: Using my definition of `\numberline' on input line 38.
-Package tocbasic Info: Using my definition of `\numberline' on input line 42.
+Package tocbasic Info: Using my definition of `\numberline' on input line 44.
+Package tocbasic Info: Using my definition of `\numberline' on input line 54.
+Package tocbasic Info: Using my definition of `\numberline' on input line 56.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1410,13 +1411,13 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 35.
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<images/tlsnotary_secret_splitting.png, id=232, 386.19281pt x 511.15968pt>
+<images/tlsnotary_secret_splitting.png, id=267, 386.19281pt x 511.15968pt>
 File: images/tlsnotary_secret_splitting.png Graphic file (type png)
 <use images/tlsnotary_secret_splitting.png>
 Package pdftex.def Info: images/tlsnotary_secret_splitting.png  used on input l
 ine 48.
 (pdftex.def)             Requested size: 212.4067pt x 281.13869pt.
-<images/tlsnotary_secret_splitting_2.png, id=233, 386.19281pt x 511.15968pt>
+<images/tlsnotary_secret_splitting_2.png, id=268, 386.19281pt x 511.15968pt>
 File: images/tlsnotary_secret_splitting_2.png Graphic file (type png)
 <use images/tlsnotary_secret_splitting_2.png>
 Package pdftex.def Info: images/tlsnotary_secret_splitting_2.png  used on input
@@ -1424,52 +1425,87 @@ Package pdftex.def Info: images/tlsnotary_secret_splitting_2.png  used on input
 (pdftex.def)             Requested size: 212.4067pt x 281.13869pt.
  [11 <./images/tlsnotary_secret_splitting.png (PNG copy)>] [12 <./images/tlsnot
 ary_secret_splitting_2.png (PNG copy)>]
-<images/android_proof_process.png, id=249, 532.99126pt x 215.30438pt>
+<images/android_proof_process.png, id=284, 532.99126pt x 215.30438pt>
 File: images/android_proof_process.png Graphic file (type png)
 <use images/android_proof_process.png>
 Package pdftex.def Info: images/android_proof_process.png  used on input line 7
 6.
 (pdftex.def)             Requested size: 399.74246pt x 161.47787pt.
  [13 <./images/android_proof_process.png (PNG copy)>]
-<images/android_proof_detailed_graph.png, id=258, 602.25pt x 532.23843pt>
+<images/android_proof_detailed_graph.png, id=293, 602.25pt x 532.23843pt>
 File: images/android_proof_detailed_graph.png Graphic file (type png)
 <use images/android_proof_detailed_graph.png>
 Package pdftex.def Info: images/android_proof_detailed_graph.png  used on input
  line 93.
 (pdftex.def)             Requested size: 391.45786pt x 345.95087pt.
- [14 <./images/android_proof_detailed_graph.png (PNG copy)>]) [15]
-\openout2 = `chapters/frontend_implementation.aux'.
+ [14 <./images/android_proof_detailed_graph.png (PNG copy)>] [15] [16]
+<images/chainlink_jobid.png, id=317, 429.85594pt x 27.10126pt>
+File: images/chainlink_jobid.png Graphic file (type png)
+<use images/chainlink_jobid.png>
+Package pdftex.def Info: images/chainlink_jobid.png  used on input line 166.
+(pdftex.def)             Requested size: 414.80838pt x 26.15253pt.
+<images/chainlink_req_price.png, id=318, 413.29407pt x 93.34875pt>
+File: images/chainlink_req_price.png Graphic file (type png)
+<use images/chainlink_req_price.png>
+Package pdftex.def Info: images/chainlink_req_price.png  used on input line 170
+.
+(pdftex.def)             Requested size: 413.29305pt x 93.34851pt.
+
+Overfull \hbox (0.2619pt too wide) in paragraph at lines 177--178
+[]\T1/lmr/m/n/10.95 Publicly open APIs can be read by the Chain-link node di-re
+ctly, with-out any adapters.
+ []
+
+[17 <./images/chainlink_jobid.png (PNG copy)> <./images/chainlink_req_price.png
+ (PNG copy)>]
+<images/chainlink_architecture.png, id=326, 411.5375pt x 824.07875pt>
+File: images/chainlink_architecture.png Graphic file (type png)
+<use images/chainlink_architecture.png>
+Package pdftex.def Info: images/chainlink_architecture.png  used on input line 
+183.
+(pdftex.def)             Requested size: 246.92441pt x 494.45107pt.
+) [18 <./images/chainlink_architecture.png>] [19]
+\openout2 = `chapters/types_of_oracles.aux'.
 
 
-(./chapters/frontend_implementation.tex
+(./chapters/types_of_oracles.tex
 Chapter 4.
-) [16
+) [20
 
-
-
-] [17
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+\openout2 = `chapters/conclusion_and_discussion.aux'.
+
+ (./chapters/conclusion_and_discussion.tex
+Chapter 5.
+) [21
+
+
+
+] [22
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./main.aux (./front/abstract.aux) (./chapters/theapp.aux)
 (./chapters/related_work.aux) (./chapters/trust_and_centralization.aux)
-(./chapters/frontend_implementation.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
+(./chapters/types_of_oracles.aux) (./chapters/conclusion_and_discussion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 58DE7F1CDBB48AF3F8C73ACF5AD61B1D;3870.
+(rerunfilecheck)             Checksum: 9F541CC1380C0886C30709D293434E68;5076.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25883 strings out of 492616
- 409244 string characters out of 6135177
- 974582 words of memory out of 5000000
- 29199 multiletter control sequences out of 15000+600000
+ 25941 strings out of 492616
+ 410675 string characters out of 6135177
+ 977639 words of memory out of 5000000
+ 29230 multiletter control sequences out of 15000+600000
  62367 words of font info for 51 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  67i,15n,96p,1315b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1481,10 +1517,10 @@ nts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10
 are/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-dist/fonts/ty
 pe1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmssbx10.
 pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (23 pages, 617052 bytes).
+Output written on main.pdf (28 pages, 682890 bytes).
 PDF statistics:
- 375 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 458 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
