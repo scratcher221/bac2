@@ -1,9 +1,33 @@
 \chapter{Comparing Different Types of Oracles}
 \label{cha:types_of_oracles}
+After examining the different implementations of Blockchain Oracles on the market, one can divide them into the categories of hardware based oracles, and software based oracles. Consensus bases oracles represent any combinations of the former.
 \section{Hardware Oracles}
-Hardware oracles ...
+Hardware oracles are those that rely on data directly from the physical world. For instance, sensors that collect data on temperature, humidity, speed, etc. can be put in this category. Furthermore, RFID sensors that send data to a blockchain are a kind of hardware oracle.
+
+Another type of oracle that can be assigned to this category, is one that mainly relies on hardware attestation features, such as Trusted Execution Environments (TEEs). Certain implementations of \emph{Oraclize} can be mentioned here, namely those that use the hardware authentication proofs. Those are:
+\begin{itemize}
+	\item Oraclize with Ledger Proof
+	\item Oraclize with Android Proof
+\end{itemize}
 \section{Software Oracles}
-Software oracles ...
+Software oracles handle information online. Those are Oracle services that provide connectors to web APIs, and various external adapters that can extract information from any kind of data format that is used online, such as JSON, XML, XHTML, etc.
+
+Known examples that can be mentioned here are:
+\begin{itemize}
+	\item Oraclize in the basic implementation, as a simple connector to web APIs
+	\item Oraclize using the TLSNotary Proof to guarantee data authenticity
+	\item ChainLink, with its various external modules that can be used for obtaining information from data sources where authentication is needed, or more complex filtering.
+\end{itemize}
 \section{Consensus Based Oracles}
+Consensus based Oracles are implementations that gather information from more than one Oracle and establish a consensus mechanism. For example, one could use two different Oracle services, fetching data from 5 different sources. Only if all results returned by the services are identical, the data is accepted as valid. But also less strict modes of this kind of model could be used, such as requiring a certain percentage to deliver the same result, etc.
+
+Another concept that can be mentioned here is the Astraea Oracle, described in chapter \ref{cha:trust_and_centralization}. It is a decentralized version of an oracle that uses a game theoretic approach to solving the problem of establishing truth in a system of  participants that do not trust each other.
 
 \section{Advantages and Disadvantages of these Types}
+Those different kinds of oracles have certain advantages and disadvantages. One feature that stands out in hardware oracles would be the fact that authenticity proof is provided by secure physical devices. So there is a high level of security involved, as long as the hardware modules on these devices are implemented properly and the devices themselves are always up to date, containing the latest security patches. By using devices from reputable manufacturers such as Ledger or Google, a fairly high level of data integrity can be established. So the data provided by one of these oracles is highly unlikely to have been tampered with.
+
+However, one limitation of these hardware based approaches is, for instance, the limited throughput, as is also mentioned in the official Oraclize documentation \cite{oraclizedoc}. 
+
+Software oracles, on the other hand, do not have this limitation, they don't rely on special hardware, but on secure software protocols that guarantee data authenticity. TLSNotary is such a protocol, that provides authenticity proof from a software level. The drawback here is that the software protocols can be exploited under certain circumstances, as described by the TLSNotary group in the TLSNotary whitepaper \cite{tlsnotarywhitepaper}.
+
+For this project, a basic, software based oracle is the preferable choice, since it can handle high throughput, and it is more modular than relying on a specific hardware infrastructure. For example, the Oraclize service can be replaced by ChainLink, since on the software level, they both provide very similar interfaces and functionality.

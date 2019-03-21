@@ -181,6 +181,33 @@
       \field{pages}{25\bibrangedash 30}
       \range{pages}{6}
     \endentry
+    \entry{ipfswhitepaper}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ae8544cf985d862137480d00d30a318b}{%
+           family={Benet},
+           familyi={B\bibinitperiod},
+           given={Juan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae8544cf985d862137480d00d30a318b}
+      \strng{fullhash}{ae8544cf985d862137480d00d30a318b}
+      \strng{bibnamehash}{ae8544cf985d862137480d00d30a318b}
+      \strng{authorbibnamehash}{ae8544cf985d862137480d00d30a318b}
+      \strng{authornamehash}{ae8544cf985d862137480d00d30a318b}
+      \strng{authorfullhash}{ae8544cf985d862137480d00d30a318b}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IPFS - Content Addressed, Versioned, P2P File System}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf
+      \endverb
+      \verb{url}
+      \verb https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf
+      \endverb
+    \endentry
     \entry{Buterin2013}{thesis}{}
       \name{author}{1}{}{%
         {{hash=850981945102d0f671b6762173c8988a}{%
@@ -499,6 +526,19 @@
       \endverb
       \verb{url}
       \verb https://github.com/oraclize/proof-verification-tool
+      \endverb
+    \endentry
+    \entry{steemitwhitepaper}{thesis}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labeltitlesource}{title}
+      \field{title}{Steem - An incentivized, blockchain-based, public content platform.}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://steem.com/steem-whitepaper.pdf
+      \endverb
+      \verb{url}
+      \verb https://steem.com/steem-whitepaper.pdf
       \endverb
     \endentry
     \entry{orisiwhitepaper}{online}{}

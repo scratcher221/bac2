@@ -2034,6 +2034,10 @@
     <bcf:citekey order="37">chainlinkdoc</bcf:citekey>
     <bcf:citekey order="38">chainlinkdoc</bcf:citekey>
     <bcf:citekey order="39">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="40">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="41">tlsnotarywhitepaper</bcf:citekey>
+    <bcf:citekey order="42">steemitwhitepaper</bcf:citekey>
+    <bcf:citekey order="43">ipfswhitepaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

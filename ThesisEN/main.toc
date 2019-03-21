@@ -41,20 +41,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Implementation of an Oracle in the App}{19}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{20}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{23}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Hardware Oracles}{20}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Hardware Oracles}{23}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software Oracles}{20}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Software Oracles}{23}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{20}{section.4.3}% 
+\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{24}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{20}{section.4.4}% 
+\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{24}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{21}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{25}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{22}{chapter*.15}% 
+\contentsline {chapter}{References}{26}{chapter*.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{22}{section*.16}% 
+\contentsline {section}{Literature}{26}{section*.23}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Online sources}{22}{section*.17}% 
+\contentsline {section}{Online sources}{27}{section*.24}% 
