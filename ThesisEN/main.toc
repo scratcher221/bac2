@@ -4,59 +4,59 @@
 \babel@toc {english}{}
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Declaration}{iii}{chapter*.1}
+\contentsline {chapter}{Declaration}{iii}{chapter*.1}% 
 \babel@toc {english}{}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abstract}{v}{chapter*.3}
+\contentsline {chapter}{Abstract}{v}{chapter*.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {1}A Cryptocurrency Sportsbetting App}{1}{chapter.1}
+\contentsline {chapter}{\numberline {1}A Cryptocurrency Sportsbetting App}{1}{chapter.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}The Theory and Concept of Smart Contracts}{2}{section.1.2}
+\contentsline {section}{\numberline {1.2}The Theory and Concept of Smart Contracts}{2}{section.1.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Practical Implementation of Smart Contracts in an App}{3}{section.1.3}
+\contentsline {section}{\numberline {1.3}Practical Implementation of Smart Contracts in an App}{3}{section.1.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}Security and Trust in the Current State of the System}{5}{section.1.4}
+\contentsline {section}{\numberline {1.4}Security and Trust in the Current State of the System}{5}{section.1.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Related Work}{6}{chapter.2}
+\contentsline {chapter}{\numberline {2}Related Work}{6}{chapter.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.1}Managing Data on the Blockchain}{6}{section.2.1}
+\contentsline {section}{\numberline {2.1}Managing Data on the Blockchain}{6}{section.2.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Security Tools for Smart Contracts}{7}{section.2.2}
+\contentsline {section}{\numberline {2.2}Security Tools for Smart Contracts}{7}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}The Problem of Trust and Centralization}{9}{chapter.3}
+\contentsline {chapter}{\numberline {3}The Problem of Trust and Centralization}{9}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Why Centralized Control is Undesirable in this Project}{9}{section.3.1}
+\contentsline {section}{\numberline {3.1}Why Centralized Control is Undesirable in this Project}{9}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}The Concept of Blockchain Oracles}{10}{section.3.2}
+\contentsline {section}{\numberline {3.2}The Concept of Blockchain Oracles}{10}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Existing Solutions}{10}{section.3.3}
+\contentsline {section}{\numberline {3.3}Existing Solutions}{10}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.1}Oraclize}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Oraclize}{10}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Astraea}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Astraea}{17}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.3}ChainLink}{16}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}ChainLink}{17}{subsection.3.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Implementation of an Oracle in the App}{19}{section.3.4}
+\contentsline {section}{\numberline {3.4}Implementation of an Oracle in the App}{19}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{23}{chapter.4}
+\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{24}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Hardware Oracles}{23}{section.4.1}
+\contentsline {section}{\numberline {4.1}Hardware Oracles}{24}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software Oracles}{23}{section.4.2}
+\contentsline {section}{\numberline {4.2}Software Oracles}{24}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{24}{section.4.3}
+\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{25}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{24}{section.4.4}
+\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{25}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{25}{chapter.5}
+\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{26}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}CD-ROM/DVD Contents}{26}{appendix.A}
+\contentsline {chapter}{\numberline {A}CD-ROM/DVD Contents}{27}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{27}{appendix*.22}
+\contentsline {chapter}{References}{28}{appendix*.21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{27}{section*.23}
+\contentsline {section}{Literature}{28}{section*.22}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Online sources}{28}{section*.24}
+\contentsline {section}{Online sources}{29}{section*.23}% 

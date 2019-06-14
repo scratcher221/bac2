@@ -2027,17 +2027,19 @@
     <bcf:citekey order="30">androidproof</bcf:citekey>
     <bcf:citekey order="31">androidproof</bcf:citekey>
     <bcf:citekey order="32">androidproof</bcf:citekey>
-    <bcf:citekey order="33">oraclizedoc</bcf:citekey>
-    <bcf:citekey order="34">oraclizeproofverify</bcf:citekey>
-    <bcf:citekey order="35">oraclizedoc</bcf:citekey>
-    <bcf:citekey order="36">astraea</bcf:citekey>
-    <bcf:citekey order="37">chainlinkdoc</bcf:citekey>
-    <bcf:citekey order="38">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="33">androidproof</bcf:citekey>
+    <bcf:citekey order="34">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="35">oraclizeproofverify</bcf:citekey>
+    <bcf:citekey order="36">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="37">astraea</bcf:citekey>
+    <bcf:citekey order="38">astraea</bcf:citekey>
     <bcf:citekey order="39">chainlinkdoc</bcf:citekey>
-    <bcf:citekey order="40">oraclizedoc</bcf:citekey>
-    <bcf:citekey order="41">tlsnotarywhitepaper</bcf:citekey>
-    <bcf:citekey order="42">steemitwhitepaper</bcf:citekey>
-    <bcf:citekey order="43">ipfswhitepaper</bcf:citekey>
+    <bcf:citekey order="40">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="41">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="42">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="43">tlsnotarywhitepaper</bcf:citekey>
+    <bcf:citekey order="44">steemitwhitepaper</bcf:citekey>
+    <bcf:citekey order="45">ipfswhitepaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

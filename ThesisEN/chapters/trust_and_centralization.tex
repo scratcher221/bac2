@@ -39,17 +39,26 @@ In order to guarantee data integrity, a document can be requested from a smart c
 \subsection*{TLSNotary Proof}
 \emph{TLSNotary} is an open-source protocol and a mechanism for independently audited HTTPS sessions. The technology is developed and used by the \emph{PageSigner} project\cite{pagesigner}. 
 
-It works by splitting the TLS master key between the auditee (in this case Oraclize) and the auditor (in this case a locked-down AWS instance of an open-source Amazon Machine Image). In this way, it is possible for the auditee, Oraclize, to prove to the auditor that certain web traffic has occurred between them and a server. The server would be the data source requested by the issuer of the "oraclize\textunderscore query" call, such as a machine that serves data over a REST API URL. This authenticity proof is indisputable, provided the auditor trusts the public key of the server (the data source).\cite{tlsnotarywhitepaper}\cite{oraclizedoc}
+It works by splitting the secret data (premaster secret) used to setup the https session to the desired data source, \ie the server, between the auditee (in this case Oraclize) and the auditor (in this case a locked-down AWS instance of an open-source Amazon Machine Image). In this way, it is possible for the auditee, Oraclize, to prove to the auditor that certain web traffic has occurred between them and a server, and that the traffic has come, in fact, from the server (data origin authentication). The server would be the data source requested by the issuer of the "oraclize\textunderscore query" call, such as a machine that serves data over a REST API URL. This authenticity proof is indisputable, provided the auditor trusts the public key of the server (the data source)\cite{tlsnotarywhitepaper}\cite{oraclizedoc}.
 
-The basic steps of how the TLS secret data is split into two parts, and the control flow of how the auditor makes sure that the auditee doesn't produce manipulated data, are illustrated in the following figures:
+The basic steps of how the TLS secret data is split into two parts, and the control flow of how the auditor makes sure that the auditee doesn't produce manipulated data, can be outlined as follows:
+
+\begin{enumerate}
+\item Auditee and auditor generate 24 bytes of the premaster secret each, the full premaster secret is not known to either of them.
+\item Both, auditee and auditor, apply a hash function to those 24 bytes, generating 48 bytes (auditee $\rightarrow H_1$ and auditor $\rightarrow H_2$).
+\item Auditor gives the first half ($H_{21}$) of their hashed secret to auditee.
+\item Auditee gives the second half ($H_{12}$) of their hashed secret to auditor.
+\item Using these halves, by applying the XOR logical operation, ($H_{11} \oplus H_{21} \rightarrow$ auditee's master secret, and $H_{22} \oplus H_{12} \rightarrow$ auditor's master secret), each party constructs their half of the master secret, which is then further processed to obtain the initialization vectors (IVs), encryption keys, and message authentication codes (MACs) used in the TLS protocol.
+\item Both parties compute a hash (140 bytes) of their master secret halves.
+\item The auditor gives approximately 120 bytes (exact number depends on the cipher suite) of this hash to the auditee, enabling them to compute IVs, client MAC key, and encryption keys (by XORing the bytes of the hashes). At this point, the client can write the https request and send it to the server. This can be seen as the start of the audit.
+\item The server (the desired data source of truth) then responds, the response is received by the client, but not decrypted. Instead, the network traffic is logged, a hash is computed and sent to the auditor (commitment of the auditee). This is the key point in the whole auditing process, as this commitment (the hash), can later be used to prove the authenticity of the data, since there was no way for the client to fabricate fake traffic data using the server mac that they don't have at that point.
+\item After the auditor receives this commitment, they reveal the remaining approximately 20 bytes, and send them to the auditee. This allows them to compute the server mac key. The TLS process continues from there, the auditee decrypts the network traffic, and checks authenticity with the server MAC.
+\end{enumerate}
+The process is illustrated in detail in the following figures:
 
 \begin{figure}[H]
-\centering
-\includegraphics[scale=0.55]{tlsnotary_secret_splitting}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.55]{tlsnotary_secret_splitting_2}
+\includegraphics[scale=0.5]{tlsnotary_secret_splitting}
+\includegraphics[scale=0.5]{tlsnotary_secret_splitting_2}
 \caption{Control flow of the TLS secret splitting and auditing process. \cite{tlsnotarywhitepaper}}
 \end{figure}
 
@@ -63,11 +72,11 @@ The basic concept is to use a service application, which is running on a trusted
 
 Another important part of this type of proof is the Hardware Attestation Object, which is required to prove that the key has been generated inside the KeyStore of the trusted physical Android device.
 
-The process of retrieving data from an API while using the Android Proof attestation can be outlined in the following way:
+The process of retrieving data from an API while using the Android Proof attestation can be outlined in the following way\cite{androidproof}:
 \begin{itemize}
-	\item The URL provided by the user is sent to the trusted Android device. The service application running on this device then establishes a HTTPS connection with this URL, and the entire response is retrieved from the server. Then the SHA256 hash of this response is calculated and signed by the application, using the hardware attested key pair from the Android KeyStore on this device.
+	\item The URL provided by the issuer of the oraclize request (the data source URL) is sent to the trusted Android device. The service application running on this device then establishes a HTTPS connection with this URL, and the entire response is retrieved from the server. Then the SHA256 hash of this response is calculated and signed by the application, using the hardware attested key pair from the Android KeyStore on this device.
 	\item A call to Google's SafetyNet API is made using the data from before as parameter. The API returns an \emph{AttestationResponse} in the JSON Web Signature format (JWS).
-	\item The service application running on the trusted device then sends the entire JWS response, the HTTPS response with it's SHA256 signature and the requestID to Oraclize. There the proof is validated and the data from the HTTPS response is forwarded to the user. The SafetyNet AttestationResponse and the Hardware Attestation Object are also sent to the user.
+	\item The service application running on the trusted device then sends the entire JWS response, the HTTPS response with its SHA256 signature and the requestID to Oraclize. There the proof is validated and the data from the HTTPS response is forwarded to the issuer of the oraclize request. The SafetyNet AttestationResponse and the Hardware Attestation Object are also sent to the issuer.
 \end{itemize}
 
 The following picture demonstrates this process in a simplified way:
@@ -137,7 +146,7 @@ There are JSON, XML, XHTML and binary parsing helpers offered by the Oraclize se
 
 The parameters of the slice operator are \texttt{(offset, length)}. This example will return the first 300 bytes in this binary file.
 \subsection{Astraea}
-Astraea is a decentralized blockchain oracle, described in a paper by John Adler et al., however it has never been implemented as a real world service. Other than Oraclize, it is not an intermediary for fetching data from third party sources, but attempts to deliver data based on a voting game that decides the truth or falsity of propositions.
+Astraea is a decentralized blockchain oracle, described in a paper by John Adler et al.\cite{astraea}, however it has never been implemented as a real world service. Other than Oraclize, it is not an intermediary for fetching data from third party sources, but attempts to deliver data based on a voting game that decides the truth or falsity of propositions.
 
 In the proposed system, there are players (submitters, voters and certifiers) that behave in the following way:
 \begin{itemize}
@@ -180,7 +189,8 @@ Furthermore, these adapters can include additional functionality. They can be wr
 \subsection*{Architecture Overview}
 The Chainlink system architecture is outlined in a simplified way in the following figure:
 \begin{figure}[H]
-\includegraphics[scale=0.6]{chainlink_architecture}
+\centering
+\includegraphics[scale=0.4]{chainlink_architecture}
 \caption{The ChainLink system architecture, as described in the official documentation\cite{chainlinkdoc}}
 \end{figure}
 
@@ -193,6 +203,7 @@ The first steps of extending the product app to work with Oraclize, is to fetch 
 For simulating a blockchain environment, the \emph{Ganache} application is used, as mentioned in chapter \ref{cha:theapp}. The local blockchain will be served from the host \\
 \texttt{http://192.168.0.108:7545}, although that URL can be changed in the application settings. When first launching the application, no transactions will be visible in the "Transactions" tab, as seen in the following figure:
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.4]{ganache_no_transactions}
 \caption{The Ganache application at first startup. The list of transactions is empty.}
 \end{figure}
@@ -206,6 +217,7 @@ After successfully completing, a summary of the deployment costs is displayed on
 \end{figure}
 This console is provided by the \emph{Truffle Suite} software. It greatly speeds up the development, and especially the debugging process of Smart Contract applications. As one can see now, the transactions that have been sent to the local blockchain by the \texttt{migrate --reset} command appear in the "Transactions" tab of the Ganache application.
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.4]{ganache_initial_transactions}
 \end{figure}
 Now the application lives on this local blockchain. However, there is still no connection to the Oracle, because the \emph{Oraclize} service requires an additional component, the \emph{Ethereum Bridge}, in order to function correctly. The source for this bridge can be obtained from Github: \texttt{https://github.com/oraclize/ethereum-bridge}. The bridge is run by issuing the command \texttt{ethereum-bridge -H 192.168.0.108:7545 -a 9 --dev} in the terminal, in the root folder of the ethereum-bridge. The parameters in this command can be described as follows:
@@ -216,11 +228,13 @@ Now the application lives on this local blockchain. However, there is still no c
 \end{itemize}
 The Ethereum bridge deploys some contracts onto the local blockchain:
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.4]{ganache_ethereum_bridge_transactions}
 \caption{The transactions generated by the Ethereum list can be viewed in this list}
 \end{figure}
 Then the Oraclize address resolver is provided by the bridge and needs to be inserted into the constructor of the \texttt{OracleObserver} contract:
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.7]{ethereum_bridge_oar}
 \caption{The Oraclize address resolver from this terminal output needs to be added to the constructor}
 \end{figure}
