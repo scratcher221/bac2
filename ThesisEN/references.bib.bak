@@ -137,11 +137,18 @@
   url   = {https://steem.com/steem-whitepaper.pdf},
 }
 
-@Thesis{,
+@Thesis{ipfswhitepaper,
   author = {Juan Benet},
   title  = {IPFS - Content Addressed, Versioned, P2P File System},
   year   = {2019},
   url    = {https://ipfs.io/ipfs/QmR7GSQM93Cx5eAg6a6yRzNde1FQv7uL6X1o4k7zrJa3LX/ipfs.draft3.pdf},
+}
+
+@Thesis{veritywhitepaper,
+  author = {Martin Mikeln, Luka Perović},
+  title  = {Verity: Platform for Decentralized Real-World Data Feeds},
+  year   = {2018},
+  url    = {http://verity.network/whitepaper.pdf},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

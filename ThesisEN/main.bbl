@@ -422,6 +422,33 @@
       \field{pages}{254\bibrangedash 269}
       \range{pages}{16}
     \endentry
+    \entry{veritywhitepaper}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=fa8d63e39040dba3934d99bc628b8e4c}{%
+           family={Martin\bibnamedelima Mikeln},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Luka\bibnamedelima Perović},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \strng{fullhash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \strng{bibnamehash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \strng{authorbibnamehash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \strng{authornamehash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \strng{authorfullhash}{fa8d63e39040dba3934d99bc628b8e4c}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Verity: Platform for Decentralized Real-World Data Feeds}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://verity.network/whitepaper.pdf
+      \endverb
+      \verb{url}
+      \verb http://verity.network/whitepaper.pdf
+      \endverb
+    \endentry
     \entry{Nakamoto2009}{thesis}{}
       \name{author}{1}{}{%
         {{hash=1977190f018b398e43ede3de043de8ea}{%
@@ -539,6 +566,31 @@
       \endverb
       \verb{url}
       \verb https://steem.com/steem-whitepaper.pdf
+      \endverb
+    \endentry
+    \entry{swarm-homepage}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a36769b5822c7059de05ad2426bbf452}{%
+           family={Swarm},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{a36769b5822c7059de05ad2426bbf452}
+      \strng{fullhash}{a36769b5822c7059de05ad2426bbf452}
+      \strng{bibnamehash}{a36769b5822c7059de05ad2426bbf452}
+      \strng{authorbibnamehash}{a36769b5822c7059de05ad2426bbf452}
+      \strng{authornamehash}{a36769b5822c7059de05ad2426bbf452}
+      \strng{authorfullhash}{a36769b5822c7059de05ad2426bbf452}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Swarm Homepage}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://ethersphere.github.io/swarm-home/
+      \endverb
+      \verb{url}
+      \verb https://ethersphere.github.io/swarm-home/
       \endverb
     \endentry
     \entry{orisiwhitepaper}{online}{}

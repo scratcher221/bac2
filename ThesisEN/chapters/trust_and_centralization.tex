@@ -65,6 +65,9 @@ The process is illustrated in detail in the following figures:
 This series of complex steps is done so that the auditee (Oraclize) cannot create a fake version of the HTTP traffic from the server, since they do not have the server mac key. Only once the auditor releases the remaining 20 bytes of the expanded key block (generated from the master secret key halves), the auditee can complete the TLS decryption and authentication steps, view the data, and forward it to the issuer of the oraclize request. 
 
 In this way, the creator of a smart contract using Oraclize can be sure that the data forwarded by this service has not been tampered with and is authentic.
+
+\newpage
+
 \subsection*{Android Proof}
 Android Proof is another type of Oraclize's authenticity proofs. It uses Google's \emph{SafetyNet} Software Attestation and Android Hardware Attestation in order to provide an environment that is secure and auditable, which can deliver reliable data.
 
@@ -99,7 +102,7 @@ The steps of generating this Android Proof are outlined in more detail in the fo
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.65]{android_proof_detailed_graph}
+\includegraphics[scale=0.66]{android_proof_detailed_graph}
 \caption{A detailed graph showing how the Android Proof is generated and verified\cite{androidproof}}
 \end{figure}
 \subsection*{Ledger Proof}
@@ -145,6 +148,58 @@ There are JSON, XML, XHTML and binary parsing helpers offered by the Oraclize se
 \texttt{binary(http://www.siemens.com/pki/ZZZZZZVS.crl).slice(0,300)}
 
 The parameters of the slice operator are \texttt{(offset, length)}. This example will return the first 300 bytes in this binary file.
+\subsection{Verity}
+Verity is a platform for decentralized data feeds. It has a conceptually different approach to fetching data, when compared to Oraclize. Instead of connecting to Web-APIs, it sources the data by using wisdom of the crowd and blockchain-as-a-court-system\cite{veritywhitepaper}.
+
+Basically, the core concept of this service is to create an incentive for people to provide truthful data about real-world events. This is done by giving participants monetary rewards, in the form of cryptocurrencies, if they provide correct information about events that have happened in the world.
+
+The correctness of information in this system is determined by a rather complex consensus mechanism. Data providers (mostly people observing real world events) report on events via a desktop or mobile app. They can enter what the values of pre-defined parameters of a data request are, for instance, which team won a football game. The data request is made by developers of smart contracts that rely on data from the outside world, such as the outcome of a sports game, how many yellow cards were raised in a game, how many people attended an event, etc. The basic flow of information from the data providers to the developers is illustrated in the following figure:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.27]{verity-data-flow}
+\caption{The flow of information in the verity network\cite{veritywhitepaper}}
+\end{figure}
+
+On the left hand side are the people that observe the events, of which the developer (of a smart contract) wants to know the outcomes. In the middle are the Verity network nodes, which validate the data by forming a consensus (\eg a specified percentage of data providers report the same information). The parameters for this consensus, such as percentage of same value reports, minimum number of participants, etc., can be defined by the developer. 
+
+\subsection*{Verity System Architecture}
+
+The architecture of the system is split into three parts, the core layer, the services layer, and the application layer. The core layer implements the consensus mechanism and node communication (discovery, routing, message propagation, \etc) and the services layer implements the Verity API, a data feed engine and a marketplace system. The application layer consists of validation nodes, data providing nodes, and provides a Verity SDK and analytics.
+
+The Ethereum blockchain is used as the base layer for the system, plus \emph{Swarm}, which is a decentralized storage platform and content distribution service\cite{swarm-homepage}.
+
+The following graphic provides a good overview over the architecture of the entire system:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.32]{verity-architecture}
+\caption{The architecture of the Verity Network\cite{veritywhitepaper}}
+\end{figure}
+
+\subsection*{Data Markets}
+In order to receive data from the Verity network, a developer first needs to specify what kind of data she wants, in what format the data should be provided, how the consensus for this data should be established, and how much she is willing to pay for this data\cite{veritywhitepaper}. This is necessary to incentivize people to provide high quality, truthful data.
+
+This process is called \emph{market generation}. In Verity, a market can consist of one or more \emph{data feeds}, and each data feed contains at least one or more \emph{data fields}, which represent events, such as whether a penalty kick was successful (boolean), what the end score in a tennis game is (two integers), or even more complex things, like what the name of the current president of a certain country is (string).
+
+The following figure illustrates what a data market in Verity consists of:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.33]{verity-data-market}
+\caption{The structure of a data market in Verity}
+\end{figure}
+
+Data providers populate this data feed with information. If there are multiple data fields in a data feed, a consensus is only reached, if all of the fields have the same value. 
+
+\subsection*{Verity Network Nodes}
+In the Verity network, there are two different kinds of nodes: \emph{Validation} nodes, and \emph{Data Providing} nodes.
+
+\subsection*{Validation Nodes}
+Validation nodes capture data, form the consensus according to the rules set by the developer, and send the data to the developer. The also earn fees for correctly processing data (according to the system's rules). Validation nodes are part of a reputation system, and can vote in the governance of the entire system, where each vote is weighted by the node's reputation.
+
+Before a market is created, validation nodes for validating the data in this market are selected randomly. Validation nodes always process \emph{encrypted} data\cite{veritywhitepaper}.
+
+\subsection*{Data Providing Nodes}
+Data Providing Nodes do not partake in any consensus forming or voting, they are only there to send data to the validation nodes.
+
 \subsection{Astraea}
 Astraea is a decentralized blockchain oracle, described in a paper by John Adler et al.\cite{astraea}, however it has never been implemented as a real world service. Other than Oraclize, it is not an intermediary for fetching data from third party sources, but attempts to deliver data based on a voting game that decides the truth or falsity of propositions.
 
@@ -171,13 +226,22 @@ For testing purposes, LINK tokens can be obtained from a faucet, which is a cont
 The "Job ID" for each type of data is found in the ChainLink documentation: \texttt{https://docs.chain.link/docs/addresses-and-job-specs}. For instance, if the contract owner wants to request boolean data, the corresponding "Job ID" would be
  
 \texttt{7ac0b3beac2c448cb2f6b2840d61d31f}. It is advisable to store those jobs ids in a constant in the contract, like this:
-\begin{figure}[H]
-\includegraphics[scale=0.965]{chainlink_jobid}
-\end{figure}
+
+\begin{SolidityCode}
+bytes32 constant UINT256_MUL_JOB = bytes32("493610cff14346f786f88ed791ab7704");
+\end{SolidityCode}
+
 To specify HTTP POST or GET parameters, or to navigate through a JSON object, methods within \texttt{Chainlink.Request} can be used. For example, to fetch the current Ethereum USD price over an API, the function can look as follows:
-\begin{figure}[H]
-\includegraphics[scale=1]{chainlink_req_price}
-\end{figure}
+\begin{SolidityCode}
+function requestPrice(string _currency) public returns (bytes32 requestId) {
+	Chainlink.Request memory req =
+	newRequest(UINT256_MUL_JOB, this, this.fulfillEthereumPrice.selector);
+	req.add('get', 'https://some-crypto-api.com/data/eth');
+	req.add('path', _currency);
+	requestId = chainlinkRequest(req, 1 * LINK);
+}
+\end{SolidityCode}
+
 \subsection*{Receiving data}
 In the \texttt{requestPrice} function implemented previously, a callback function that has been assigned to \texttt{requestId} is returned. This function is triggered, when the Chainlink network responds to the query with a result. 
 \subsection*{External Adapters}
@@ -186,6 +250,9 @@ Chainlink provides a feature called "External Adapters". Basically, these adapte
 Publicly open APIs can be read by the Chainlink node directly, without any adapters. However, some APIs require authentication with sensitive credentials. These should not be stored on the Chainlink node directly, as that would pose a security risk. Credentials can be stored in whatever way it is specified in the external adapter.
 
 Furthermore, these adapters can include additional functionality. They can be written in any language\cite{chainlinkdoc}.
+
+\newpage
+
 \subsection*{Architecture Overview}
 The Chainlink system architecture is outlined in a simplified way in the following figure:
 \begin{figure}[H]
@@ -194,9 +261,8 @@ The Chainlink system architecture is outlined in a simplified way in the followi
 \caption{The ChainLink system architecture, as described in the official documentation\cite{chainlinkdoc}}
 \end{figure}
 
-\section{Implementation of an Oracle in the App}
-The Oracle connector used in the project is the \emph{Oraclize} service. Mainly, the functionality for the purposes of a cryptocurrency sportsbetting app is implemented in the Solidity contract \texttt{OracleObserver.sol}.
-The first steps of extending the product app to work with Oraclize, is to fetch the connector contract from Github. It can be found under this URL: \texttt{https://github.com/oraclize/ethereum-api/blob/master
+\section{Implementation of an Oracle in an App}
+In the following section, the implementation of an Oracle in an App is demonstrated using the \emph{Oraclize} service. The first steps of extending an app to work with Oraclize, is to fetch the connector contract from Github. It can be found under this URL: \texttt{https://github.com/oraclize/ethereum-api/blob/master
 \\
 /oraclizeAPI\textunderscore 0.5.sol}. This source code needs to be downloaded and saved into the \texttt{/contracts} directory. The name should be \texttt{usingOraclize.sol}. This contract contains the main logic and the adapters for communicating with the external APIs.
 
@@ -208,13 +274,31 @@ For simulating a blockchain environment, the \emph{Ganache} application is used,
 \caption{The Ganache application at first startup. The list of transactions is empty.}
 \end{figure}
 The next step is to compile all of the smart contracts, and deploy them to this local blockchain using the migration script \texttt{1\textunderscore initial\textunderscore migrations.js}. After that the second migration script \texttt{2\textunderscore deploy\textunderscore contracts} is run. These processes can be automated by simply running the command \texttt{migrate --reset} in the \emph{truffle console}. 
-\begin{figure}[H]
-\includegraphics[scale=1]{truffle_console}
-\end{figure}
+\begin{GenericCode}[numbers=none]
+truffle(development)> migrate --reset
+\end{GenericCode}
 After successfully completing, a summary of the deployment costs is displayed on the console:
-\begin{figure}[H]
-\includegraphics[scale=1]{truffle_console_cost_summary}
-\end{figure}
+\begin{GenericCode}[numbers=none]
+	> gas used:				5423581
+	> gas price:			20 gwei
+	> value sent:			0 ETH
+	> total cost:			0.10847162 ETH
+	
+	
+	
+	> Saving migration to chain.
+	> Saving artifacts
+	----------------------------------
+	> Total cost:			0.10847162 ETH
+	
+	
+Summary
+=======
+> Total deployments:	2
+> Final cost:					0.11525048 ETH
+
+truffle(development)> 
+\end{GenericCode}
 This console is provided by the \emph{Truffle Suite} software. It greatly speeds up the development, and especially the debugging process of Smart Contract applications. As one can see now, the transactions that have been sent to the local blockchain by the \texttt{migrate --reset} command appear in the "Transactions" tab of the Ganache application.
 \begin{figure}[H]
 \centering
@@ -239,8 +323,19 @@ Then the Oraclize address resolver is provided by the bridge and needs to be ins
 \caption{The Oraclize address resolver from this terminal output needs to be added to the constructor}
 \end{figure}
 After that, the setup is completed so far - the Smart Contract can now communicate with the Oraclize service, if the methods are implemented correctly in a contract that inherits from the connector contract. In this project application, that contract is the \texttt{OracleObserver} contract. The crucial functions that are responsible for actually fetching the data, and storing it in a variable in the contract are these following two:
-\begin{figure}[H]
-\includegraphics[scale=0.8]{oraclize_function_implementation}
-\caption{The implementation of the crucial connector functions in the OracleObserver contract}
-\end{figure}
+
+\begin{SolidityCode}
+function __callback(bytes32 queryId, string memory result) public {
+	if (msg.sender != oraclize_cbAddress())
+		revert();
+	emit newDataResult(result);
+}
+
+function update() public payable {
+	emit newOraclizeQuery("Oraclize query was sent, standing by for the answer..");
+	oraclize_query("URL", "xml(https://www.datasource.com/ws/rest/gameresults).game.home");
+}
+\end{SolidityCode}
+\captionof{lstlisting}{The implementation of the crucial connector functions in the OracleObserver contract}
+
 After these steps, the data can be successfully fetched from the web API, via these connector functions, and stored in a variable residing in the smart contract. Lastly, there needs to be an interface between the frontend (the GUI presented to the user in the browser), and the backend (the application logic that resides in the contracts and the script functions on the server). This is enabled by the \emph{MetaMask} plugin, which manages the Ethereum accounts, and injects them into the web application through the \emph{web3} library. 

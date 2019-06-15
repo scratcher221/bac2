@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.1)  14 JUN 2019 02:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.1)  14 JUN 2019 21:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1210,30 +1210,30 @@ File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 (./chapters/conclusion_and_discussion.aux) (./back/appendix_a.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 
 (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 43.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 42.
 
 (/usr/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1287,7 +1287,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \everyMPtoPDFconversion=\toks41
 )
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 42.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -1296,9 +1296,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count389
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
  (./main.out)
 (./main.out)
 \@outlinefile=\write4
@@ -1324,53 +1324,53 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 43.
-Package biblatex Info: Reference segment=0 on input line 43.
-Package hyperref Info: Option `pageanchor' set `false' on input line 50.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 50.
+Package biblatex Info: Reference section=0 on input line 42.
+Package biblatex Info: Reference segment=0 on input line 42.
+Package hyperref Info: Option `pageanchor' set `false' on input line 49.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 50.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 50.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 50.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 49.
 
 
 (/usr/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>><<omx.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              <6> on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<images/logo.pdf, id=121, 269.93045pt x 269.93045pt>
+<images/logo.pdf, id=125, 269.93045pt x 269.93045pt>
 File: images/logo.pdf Graphic file (type pdf)
 <use images/logo.pdf>
-Package pdftex.def Info: images/logo.pdf  used on input line 50.
+Package pdftex.def Info: images/logo.pdf  used on input line 49.
 (pdftex.def)             Requested size: 85.35805pt x 85.35826pt.
  [1
 
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images/logo.pdf>] [2]
-Package hyperref Info: Option `pageanchor' set `true' on input line 50.
+Package hyperref Info: Option `pageanchor' set `true' on input line 49.
  [3
 
 ] (./main.toc
@@ -1379,10 +1379,10 @@ Package tocbasic Info: Using my definition of `\numberline' on input line 10.
 Package tocbasic Info: Using my definition of `\numberline' on input line 12.
 Package tocbasic Info: Using my definition of `\numberline' on input line 22.
 Package tocbasic Info: Using my definition of `\numberline' on input line 28.
-Package tocbasic Info: Using my definition of `\numberline' on input line 44.
-Package tocbasic Info: Using my definition of `\numberline' on input line 54.
+Package tocbasic Info: Using my definition of `\numberline' on input line 46.
 Package tocbasic Info: Using my definition of `\numberline' on input line 56.
 Package tocbasic Info: Using my definition of `\numberline' on input line 58.
+Package tocbasic Info: Using my definition of `\numberline' on input line 60.
 )
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1434,13 +1434,13 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 35.
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [11]
-<images/tlsnotary_secret_splitting.png, id=290, 386.19281pt x 511.15968pt>
+<images/tlsnotary_secret_splitting.png, id=295, 386.19281pt x 511.15968pt>
 File: images/tlsnotary_secret_splitting.png Graphic file (type png)
 <use images/tlsnotary_secret_splitting.png>
 Package pdftex.def Info: images/tlsnotary_secret_splitting.png  used on input l
 ine 60.
 (pdftex.def)             Requested size: 193.09592pt x 255.57921pt.
-<images/tlsnotary_secret_splitting_2.png, id=291, 386.19281pt x 511.15968pt>
+<images/tlsnotary_secret_splitting_2.png, id=296, 386.19281pt x 511.15968pt>
 File: images/tlsnotary_secret_splitting_2.png Graphic file (type png)
 <use images/tlsnotary_secret_splitting_2.png>
 Package pdftex.def Info: images/tlsnotary_secret_splitting_2.png  used on input
@@ -1448,113 +1448,113 @@ Package pdftex.def Info: images/tlsnotary_secret_splitting_2.png  used on input
 (pdftex.def)             Requested size: 193.09592pt x 255.57921pt.
  [12 <./images/tlsnotary_secret_splitting.png (PNG copy)> <./images/tlsnotary_s
 ecret_splitting_2.png (PNG copy)>]
-<images/android_proof_process.png, id=301, 532.99126pt x 215.30438pt>
+<images/android_proof_process.png, id=306, 532.99126pt x 215.30438pt>
 File: images/android_proof_process.png Graphic file (type png)
 <use images/android_proof_process.png>
 Package pdftex.def Info: images/android_proof_process.png  used on input line 8
-5.
+8.
 (pdftex.def)             Requested size: 399.74246pt x 161.47787pt.
  [13 <./images/android_proof_process.png (PNG copy)>]
-<images/android_proof_detailed_graph.png, id=311, 602.25pt x 532.23843pt>
+<images/android_proof_detailed_graph.png, id=316, 602.25pt x 532.23843pt>
 File: images/android_proof_detailed_graph.png Graphic file (type png)
 <use images/android_proof_detailed_graph.png>
 Package pdftex.def Info: images/android_proof_detailed_graph.png  used on input
- line 102.
-(pdftex.def)             Requested size: 391.45786pt x 345.95087pt.
+ line 105.
+(pdftex.def)             Requested size: 397.48622pt x 351.27844pt.
  [14]
-[15 <./images/android_proof_detailed_graph.png (PNG copy)>] [16] [17]
-<images/chainlink_jobid.png, id=339, 429.85594pt x 27.10126pt>
-File: images/chainlink_jobid.png Graphic file (type png)
-<use images/chainlink_jobid.png>
-Package pdftex.def Info: images/chainlink_jobid.png  used on input line 175.
-(pdftex.def)             Requested size: 414.80838pt x 26.15253pt.
-<images/chainlink_req_price.png, id=340, 413.29407pt x 93.34875pt>
-File: images/chainlink_req_price.png Graphic file (type png)
-<use images/chainlink_req_price.png>
-Package pdftex.def Info: images/chainlink_req_price.png  used on input line 179
+[15 <./images/android_proof_detailed_graph.png (PNG copy)>] [16]
+<images/verity-data-flow.png, id=338, 1523.6925pt x 679.53876pt>
+File: images/verity-data-flow.png Graphic file (type png)
+<use images/verity-data-flow.png>
+Package pdftex.def Info: images/verity-data-flow.png  used on input line 159.
+(pdftex.def)             Requested size: 411.40248pt x 183.47792pt.
+ [17 <./images/verity-data-flow.png>]
+<images/verity-architecture.png, id=350, 1269.74374pt x 919.435pt>
+File: images/verity-architecture.png Graphic file (type png)
+<use images/verity-architecture.png>
+Package pdftex.def Info: images/verity-architecture.png  used on input line 174
 .
-(pdftex.def)             Requested size: 413.29305pt x 93.34851pt.
+(pdftex.def)             Requested size: 406.3263pt x 294.2252pt.
+ [18 <./images/verity-architecture.png>]
+<images/verity-data-market.png, id=361, 1226.5825pt x 665.48625pt>
+File: images/verity-data-market.png Graphic file (type png)
+<use images/verity-data-market.png>
+Package pdftex.def Info: images/verity-data-market.png  used on input line 186.
 
-Overfull \hbox (0.2619pt too wide) in paragraph at lines 186--187
+(pdftex.def)             Requested size: 404.77348pt x 219.61113pt.
+ [19 <./images/verity-data-market.png>]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 230.
+ [20]
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 238
+.
+ (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (0.2619pt too wide) in paragraph at lines 249--250
 []\T1/lmr/m/n/10.95 Publicly open APIs can be read by the Chain-link node di-re
 ctly, with-out any adapters.
  []
 
-<images/chainlink_architecture.png, id=342, 411.5375pt x 824.07875pt>
+[21]
+<images/chainlink_architecture.png, id=397, 411.5375pt x 824.07875pt>
 File: images/chainlink_architecture.png Graphic file (type png)
 <use images/chainlink_architecture.png>
 Package pdftex.def Info: images/chainlink_architecture.png  used on input line 
-193.
+259.
 (pdftex.def)             Requested size: 164.61208pt x 329.62566pt.
-[18 <./images/chainlink_jobid.png (PNG copy)> <./images/chainlink_req_price.png
- (PNG copy)>]
-<images/ganache_no_transactions.png, id=354, 733.23938pt x 609.02531pt>
+<images/ganache_no_transactions.png, id=401, 733.23938pt x 609.02531pt>
 File: images/ganache_no_transactions.png Graphic file (type png)
 <use images/ganache_no_transactions.png>
 Package pdftex.def Info: images/ganache_no_transactions.png  used on input line
- 207.
+ 272.
 (pdftex.def)             Requested size: 293.29056pt x 243.6058pt.
- [19 <./images/chainlink_architecture.png>]
-<images/truffle_console.png, id=361, 201.00093pt x 15.05624pt>
-File: images/truffle_console.png Graphic file (type png)
-<use images/truffle_console.png>
-Package pdftex.def Info: images/truffle_console.png  used on input line 212.
-(pdftex.def)             Requested size: 201.00043pt x 15.0562pt.
-<images/truffle_console_cost_summary.png, id=362, 231.11343pt x 262.73157pt>
-File: images/truffle_console_cost_summary.png Graphic file (type png)
-<use images/truffle_console_cost_summary.png>
-Package pdftex.def Info: images/truffle_console_cost_summary.png  used on input
- line 216.
-(pdftex.def)             Requested size: 231.11287pt x 262.73091pt.
- [20 <./images/ganache_no_transactions.png (PNG copy)> <./images/truffle_consol
-e.png (PNG copy)>]
-<images/ganache_initial_transactions.png, id=370, 782.925pt x 609.02531pt>
+ [22 <./images/chainlink_architecture.png>]
+<images/ganache_initial_transactions.png, id=408, 782.925pt x 609.02531pt>
 File: images/ganache_initial_transactions.png Graphic file (type png)
 <use images/ganache_initial_transactions.png>
 Package pdftex.def Info: images/ganache_initial_transactions.png  used on input
- line 221.
+ line 304.
 (pdftex.def)             Requested size: 313.16446pt x 243.6058pt.
-
-[21 <./images/truffle_console_cost_summary.png (PNG copy)> <./images/ganache_in
-itial_transactions.png (PNG copy)>]
-<images/ganache_ethereum_bridge_transactions.png, id=377, 782.925pt x 609.02531
+ [23 <./images/ganache_no_transactions.png (PNG copy)>]
+<images/ganache_ethereum_bridge_transactions.png, id=436, 782.925pt x 609.02531
 pt>
 File: images/ganache_ethereum_bridge_transactions.png Graphic file (type png)
 <use images/ganache_ethereum_bridge_transactions.png>
 Package pdftex.def Info: images/ganache_ethereum_bridge_transactions.png  used 
-on input line 232.
+on input line 315.
 (pdftex.def)             Requested size: 313.16446pt x 243.6058pt.
-<images/ethereum_bridge_oar.png, id=378, 578.91281pt x 88.83188pt>
+ [24 <./images/ganache_initial_transactions.png (PNG copy)>]
+<images/ethereum_bridge_oar.png, id=442, 578.91281pt x 88.83188pt>
 File: images/ethereum_bridge_oar.png Graphic file (type png)
 <use images/ethereum_bridge_oar.png>
-Package pdftex.def Info: images/ethereum_bridge_oar.png  used on input line 238
+Package pdftex.def Info: images/ethereum_bridge_oar.png  used on input line 321
 .
 (pdftex.def)             Requested size: 405.2362pt x 62.18187pt.
-<images/oraclize_function_implementation.png, id=379, 485.56406pt x 137.01187pt
->
-File: images/oraclize_function_implementation.png Graphic file (type png)
-<use images/oraclize_function_implementation.png>
-Package pdftex.def Info: images/oraclize_function_implementation.png  used on i
-nput line 243.
-(pdftex.def)             Requested size: 388.45177pt x 109.60963pt.
- [22 <./images/ganache_ethereum_bridge_transactions.png (PNG copy)> <./images/e
-thereum_bridge_oar.png (PNG copy)>])
-[23 <./images/oraclize_function_implementation.png (PNG copy)>]
+ [25 <./images/ganache_ethereum_bridge_transactions.png (PNG copy)> <./images/e
+thereum_bridge_oar.png (PNG copy)>]
+
+Package caption Warning: \captionsetup{type*=...} or \captionof
+(caption)                outside box or environment on input line 338.
+See the caption package documentation for explanation.
+
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 338.
+) [26]
 \openout2 = `chapters/types_of_oracles.aux'.
 
-
-(./chapters/types_of_oracles.tex
+ (./chapters/types_of_oracles.tex
 Chapter 4.
-[24
+[27
 
 
 
-]) [25]
+]) [28]
 \openout2 = `chapters/conclusion_and_discussion.aux'.
 
  (./chapters/conclusion_and_discussion.tex
 Chapter 5.
-) [26
+) [29
 
 
 
@@ -1563,53 +1563,56 @@ Chapter 5.
 
  (./back/appendix_a.tex
 Appendix A.
-) [27
+) [30
 
 
 
-] [28
+] [31
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (./main.aux (./front/abstract.aux) (./chapters/theapp.aux)
 (./chapters/related_work.aux) (./chapters/trust_and_centralization.aux)
 (./chapters/types_of_oracles.aux) (./chapters/conclusion_and_discussion.aux)
 (./back/appendix_a.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F617311D53158A36A85C4257C4908133;5222.
+(rerunfilecheck)             Checksum: 41014677D3171461916A6DC2BA7DE3DA;5309.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26084 strings out of 492616
- 413784 string characters out of 6135178
- 982588 words of memory out of 5000000
- 29326 multiletter control sequences out of 15000+600000
- 65359 words of font info for 52 fonts, out of 8000000 for 9000
+ 26745 strings out of 492616
+ 420701 string characters out of 6135178
+ 1009431 words of memory out of 5000000
+ 29930 multiletter control sequences out of 15000+600000
+ 69298 words of font info for 56 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 67i,15n,96p,1315b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,96p,1315b,3440s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
-nts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.
-enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-d
-ist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/lm/
+nts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
+}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist
+/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texmf-dist/fonts/type1/public/lm/
 lmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/share
 /texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf-dist/fonts/type1
 /public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></us
-r/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf-dist/font
-s/type1/public/lm/lmss10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss1
-2.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf
--dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/pub
-lic/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (34 pages, 1143759 bytes).
+r/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf-dist/fonts/
+type1/public/lm/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss10.
+pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf-dist/fonts/type1/public/
+lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pf
+b>
+Output written on main.pdf (37 pages, 2007990 bytes).
 PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 466 compressed objects within 5 object streams
- 107 named destinations out of 1000 (max. 500000)
- 320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 654 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 155 named destinations out of 1000 (max. 500000)
+ 318 words of extra memory for PDF output out of 10000 (max. 10000000)
 
