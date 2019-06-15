@@ -98,13 +98,6 @@ This type of authenticity proof can be verified by any third party by checking t
 
 In order for the Android Proof to be a suitable method for guaranteeing data authenticity, a number of features of the Android platform are utilized. Worth mentioning here are the Android Hardware Keystore and the Hardware Attestation, first implemented in Android Nougat. Both features are implemented in a TEE (Trusted Execution Environment). Furthermore, the concept relies on Google's SafetyNet Software Attestation APIs and the Android App Sandbox model. It is assumed that this model is secure and prevents apps from manipulating memory or data that do not belong to them. This sandbox model is one of the key features of the Android OS. Google's SafetyNet is a feature which can be used by developers to check whether a device is in a tampered (rooted, monitored, infected with malware) state or not.
 
-The steps of generating this Android Proof are outlined in more detail in the following graph, taken from the Android Proof whitepaper by Oraclize.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.66]{android_proof_detailed_graph}
-\caption{A detailed graph showing how the Android Proof is generated and verified\cite{androidproof}}
-\end{figure}
 \subsection*{Ledger Proof}
 The third kind of authenticity proof provided by the Oraclize service is called \emph{Ledger Proof}. \emph{Ledger} is a French company specializing in the field of producing hardware-enforced cryptocurrency wallets. Their flagship product is the Ledger Nano S. Their devices are equipped with a STMicroelectronics secure element, a controller and the operating system \emph{BOLOS}. Developers can build applications for this OS using the BOLOS-SDK.
 
@@ -161,7 +154,7 @@ The basic flow of information from the data providers to the developers is illus
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.27]{verity-data-flow}
-\caption{The flow of information in the verity network\cite{veritywhitepaper}}
+\caption{The flow of information in the Verity network\cite{veritywhitepaper}}
 \end{figure}
 
 On the left hand side are the people that observe the events, of which the developer (of a smart contract) wants to know the outcomes. In the middle are the Verity network nodes, which validate the data by forming a consensus (\eg a specified percentage of data providers report the same information). The parameters for this consensus, such as percentage of same value reports, minimum number of participants, etc., can be defined by the developer. 
@@ -261,6 +254,41 @@ For the consensus, three parameters are relevant\cite{veritywhitepaper}
 \end{itemize}
 The \emph{confirmations} consensus mode means that the developer will receive the result immediately after a consensus is reached. If this consensus is overthrown by later occurring votes, it is changed and the developer is notified about the new consensus. \emph{Final} mode means the consensus is only sent to the creator of the data market, when \emph{stop\textunderscore voting} is reached. \emph{Stop voting} is another parameter set by the market creator, that indicates until what time data providers can report data (a timestamp), or what percentage of voters needs to be reached until the market is considered decided.
 
+\subsection*{Disputes}
+In most cases, the consensus reached by the network participants should be definite, however there can be cases where the majority of voters erroneously reports false data.
+
+Whenever a consensus is reached, a set of the data providing nodes that were not part of this consensus is notified about the result. The size of this set depends on the parameter $Z$, which is set by the developer during market creation. $Z$ is the cross validation factor that decides the proportion of data providers outside the consensus that will be notified that their data was not accepted by the majority. When they are notified, a dispute can be opened immediately.
+
+In order to open a dispute, the participant has to stake a large number of his tokens, where the exact amount depends on his reputation. The dispute gets broadcast out into the network, and new data providers can decide to join the dispute resolution. Data providers that are subscribed to data feeds similar to the one being disputed, are notified about the dispute.
+
+The dispute resolution works according to the following formula:
+\begin{itemize}
+\item New data providers: $u$
+\item People in the minority: $n$
+\item People in the majority (the consensus): $m$
+\item Require: $n + u >= m$
+\end{itemize}
+\textbf{Dispute overthrown:}
+
+If $n + u$ decides with 100\% that the majority $m$ was right, or $u$ alone is 2/3 or more confident that $m$ was right, the dispute is rejected and the tokens of the dispute opener get rewarded to everyone who helped resolve the dispute. The dispute opener also loses reputation.
+
+\newpage
+
+\textbf{Dispute accepted:}
+
+If $n + u$ decides with 2/3 majority that the majority $m$ was wrong, tokens from $m$ go to $n + u$. The data provider who opened the dispute gets a bigger reward than the others in this case.
+
+\subsection*{Reputation}
+In the Verity network, participants gain reputation by following the rules of the system, and lose reputation if the play against the system. Starting reputation for all participants is $3$.
+
+\textbf{Gaining reputation:}
+
+Data providers gain reputation by being part of the consensus. So if a person is at a location where an event occurs and observes the outcome of this event, truthfully reporting this outcome should almost always increase their reputation. Additionally, reputation can be gained by helping to resolve disputes. Validation nodes gain reputation by having a good uptime\cite{veritywhitepaper}.
+
+\textbf{Losing reputation:}
+
+Data providers lose reputation by not being part of the consensus in a data market. Additionally, reputation is also lost by joining a data market but never reporting anything.
+
 \subsection*{Reporting Data}
 Network participants who want to report on an event send with the developer's public key encrypted data to the validation nodes. This is important, so that the data can be monetized later on, if the developer, who is the market creator, chooses so.
 
@@ -268,7 +296,7 @@ The validation nodes continue to accept data from providers, as long as no conse
 Formally, accept data from providers, until:
 \\
 \\
-$n[same\textunderscore data] > consensus\textunderscore rule \cdot n > min\textunderscore consensus$
+$n[same\_data] > consensus\_rule \cdot n > min\_consensus$
 
 \subsection*{Receiving Data}
 After the validation nodes have confirmed that a consensus on a certain data feed has been reached, it gets sent to the market creator in the JSON format\cite{veritywhitepaper}:
@@ -354,16 +382,6 @@ Chainlink provides a feature called "External Adapters". Basically, these adapte
 Publicly open APIs can be read by the Chainlink node directly, without any adapters. However, some APIs require authentication with sensitive credentials. These should not be stored on the Chainlink node directly, as that would pose a security risk. Credentials can be stored in whatever way it is specified in the external adapter.
 
 Furthermore, these adapters can include additional functionality. They can be written in any language\cite{chainlinkdoc}.
-
-\newpage
-
-\subsection*{Architecture Overview}
-The Chainlink system architecture is outlined in a simplified way in the following figure:
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{chainlink_architecture}
-\caption{The ChainLink system architecture, as described in the official documentation\cite{chainlinkdoc}}
-\end{figure}
 
 \section{Implementation of an Oracle in an App}
 In the following section, the implementation of an Oracle in an App is demonstrated using the \emph{Oraclize} service. The first steps of extending an app to work with Oraclize, is to fetch the connector contract from Github. It can be found under this URL: \texttt{https://github.com/oraclize/ethereum-api/blob/master

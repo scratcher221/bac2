@@ -35,7 +35,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.1}Oraclize}{10}{subsection.3.3.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3.2}Verity}{17}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.2}Verity}{16}{subsection.3.3.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3.3}Astraea}{22}{subsection.3.3.3}% 
 \defcounter {refsection}{0}\relax 
@@ -43,22 +43,22 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}Implementation of an Oracle in an App}{24}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{29}{chapter.4}% 
+\contentsline {chapter}{\numberline {4}Comparing Different Types of Oracles}{28}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Hardware Oracles}{29}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Hardware Oracles}{28}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Software Oracles}{29}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Software Oracles}{28}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{30}{section.4.3}% 
+\contentsline {section}{\numberline {4.3}Consensus Based Oracles}{29}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{30}{section.4.4}% 
+\contentsline {section}{\numberline {4.4}Advantages and Disadvantages of these Types}{29}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{31}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Conclusion and Discussion}{30}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}CD-ROM/DVD Contents}{32}{appendix.A}% 
+\contentsline {chapter}{\numberline {A}CD-ROM/DVD Contents}{31}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{References}{33}{appendix*.19}% 
+\contentsline {chapter}{References}{32}{appendix*.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Literature}{33}{section*.20}% 
+\contentsline {section}{Literature}{32}{section*.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{Online sources}{34}{section*.21}% 
+\contentsline {section}{Online sources}{33}{section*.19}% 

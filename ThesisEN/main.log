@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.1)  15 JUN 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/Arch Linux) (preloaded format=pdflatex 2019.5.1)  15 JUN 2019 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1454,115 +1454,92 @@ File: images/android_proof_process.png Graphic file (type png)
 Package pdftex.def Info: images/android_proof_process.png  used on input line 8
 8.
 (pdftex.def)             Requested size: 399.74246pt x 161.47787pt.
- [13 <./images/android_proof_process.png (PNG copy)>]
-<images/android_proof_detailed_graph.png, id=316, 602.25pt x 532.23843pt>
-File: images/android_proof_detailed_graph.png Graphic file (type png)
-<use images/android_proof_detailed_graph.png>
-Package pdftex.def Info: images/android_proof_detailed_graph.png  used on input
- line 105.
-(pdftex.def)             Requested size: 397.48622pt x 351.27844pt.
- [14]
-[15 <./images/android_proof_detailed_graph.png (PNG copy)>] [16]
-<images/verity-data-flow.png, id=338, 1523.6925pt x 679.53876pt>
+ [13 <./images/android_proof_process.png (PNG copy)>] [14]
+[15]
+<images/verity-data-flow.png, id=330, 1523.6925pt x 679.53876pt>
 File: images/verity-data-flow.png Graphic file (type png)
 <use images/verity-data-flow.png>
-Package pdftex.def Info: images/verity-data-flow.png  used on input line 163.
+Package pdftex.def Info: images/verity-data-flow.png  used on input line 156.
 (pdftex.def)             Requested size: 411.40248pt x 183.47792pt.
- [17 <./images/verity-data-flow.png>]
-<images/verity-architecture.png, id=350, 1269.74374pt x 919.435pt>
+ [16 <./images/verity-data-flow.png>]
+<images/verity-architecture.png, id=342, 1269.74374pt x 919.435pt>
 File: images/verity-architecture.png Graphic file (type png)
 <use images/verity-architecture.png>
-Package pdftex.def Info: images/verity-architecture.png  used on input line 178
+Package pdftex.def Info: images/verity-architecture.png  used on input line 171
 .
 (pdftex.def)             Requested size: 406.3263pt x 294.2252pt.
- [18 <./images/verity-architecture.png>]
-<images/verity-data-market.png, id=361, 1196.47pt x 630.355pt>
+ [17 <./images/verity-architecture.png>]
+<images/verity-data-market.png, id=353, 1196.47pt x 630.355pt>
 File: images/verity-data-market.png Graphic file (type png)
 <use images/verity-data-market.png>
-Package pdftex.def Info: images/verity-data-market.png  used on input line 192.
+Package pdftex.def Info: images/verity-data-market.png  used on input line 185.
 
 (pdftex.def)             Requested size: 394.83632pt x 208.01779pt.
- [19 <./images/verity-data-market.png>]
+ [18 <./images/verity-data-market.png>]
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 236.
+(caption)                outside box or environment on input line 229.
 See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 236.
-[20]
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 271.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 271.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 271.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--272
+nput line 229.
+[19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 295--300
 
  []
 
 [21] [22]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <9> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 335.
-LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 343
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 363.
+LaTeX Font Info:    Try loading font information for TS1+lmtt on input line 371
 .
  (/usr/share/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [23]
-<images/chainlink_architecture.png, id=476, 411.5375pt x 824.07875pt>
-File: images/chainlink_architecture.png Graphic file (type png)
-<use images/chainlink_architecture.png>
-Package pdftex.def Info: images/chainlink_architecture.png  used on input line 
-364.
-(pdftex.def)             Requested size: 164.61208pt x 329.62566pt.
-<images/ganache_no_transactions.png, id=480, 733.23938pt x 609.02531pt>
+<images/ganache_no_transactions.png, id=474, 733.23938pt x 609.02531pt>
 File: images/ganache_no_transactions.png Graphic file (type png)
 <use images/ganache_no_transactions.png>
 Package pdftex.def Info: images/ganache_no_transactions.png  used on input line
- 377.
+ 395.
 (pdftex.def)             Requested size: 293.29056pt x 243.6058pt.
- [24 <./images/chainlink_architecture.png>]
-<images/ganache_initial_transactions.png, id=487, 782.925pt x 609.02531pt>
+ [24 <./images/ganache_no_transactions.png (PNG copy)>]
+<images/ganache_initial_transactions.png, id=486, 782.925pt x 609.02531pt>
 File: images/ganache_initial_transactions.png Graphic file (type png)
 <use images/ganache_initial_transactions.png>
 Package pdftex.def Info: images/ganache_initial_transactions.png  used on input
- line 409.
+ line 427.
 (pdftex.def)             Requested size: 313.16446pt x 243.6058pt.
- [25 <./images/ganache_no_transactions.png (PNG copy)>]
-<images/ganache_ethereum_bridge_transactions.png, id=515, 782.925pt x 609.02531
+ [25 <./images/ganache_initial_transactions.png (PNG copy)>]
+<images/ganache_ethereum_bridge_transactions.png, id=508, 782.925pt x 609.02531
 pt>
 File: images/ganache_ethereum_bridge_transactions.png Graphic file (type png)
 <use images/ganache_ethereum_bridge_transactions.png>
 Package pdftex.def Info: images/ganache_ethereum_bridge_transactions.png  used 
-on input line 420.
+on input line 438.
 (pdftex.def)             Requested size: 313.16446pt x 243.6058pt.
- [26 <./images/ganache_initial_transactions.png (PNG copy)>]
-<images/ethereum_bridge_oar.png, id=522, 578.91281pt x 88.83188pt>
+<images/ethereum_bridge_oar.png, id=509, 578.91281pt x 88.83188pt>
 File: images/ethereum_bridge_oar.png Graphic file (type png)
 <use images/ethereum_bridge_oar.png>
-Package pdftex.def Info: images/ethereum_bridge_oar.png  used on input line 426
+Package pdftex.def Info: images/ethereum_bridge_oar.png  used on input line 444
 .
 (pdftex.def)             Requested size: 405.2362pt x 62.18187pt.
- [27 <./images/ganache_ethereum_bridge_transactions.png (PNG copy)> <./images/e
-thereum_bridge_oar.png (PNG copy)>]) [28]
+ [26 <./images/ganache_ethereum_bridge_transactions.png (PNG copy)> <./images/e
+thereum_bridge_oar.png (PNG copy)>]) [27]
 \openout2 = `chapters/types_of_oracles.aux'.
 
- (./chapters/types_of_oracles.tex
+
+(./chapters/types_of_oracles.tex
 Chapter 4.
-[29
+[28
 
 
 
-]) [30]
+]) [29]
 \openout2 = `chapters/conclusion_and_discussion.aux'.
 
  (./chapters/conclusion_and_discussion.tex
 Chapter 5.
-) [31
+) [30
 
 
 
@@ -1571,16 +1548,16 @@ Chapter 5.
 
  (./back/appendix_a.tex
 Appendix A.
-) [32
+) [31
 
 
 
-] [33
+] [32
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [34]
+ [33]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (./main.aux (./front/abstract.aux) (./chapters/theapp.aux)
 (./chapters/related_work.aux) (./chapters/trust_and_centralization.aux)
@@ -1589,24 +1566,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 41014677D3171461916A6DC2BA7DE3DA;5309.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
+(rerunfilecheck)             Checksum: 31CC929C77A5C456ECD779DC7CD3BE2A;5309.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 26815 strings out of 492616
- 421705 string characters out of 6135178
- 1038455 words of memory out of 5000000
- 29931 multiletter control sequences out of 15000+600000
+ 26802 strings out of 492616
+ 421280 string characters out of 6135178
+ 1037451 words of memory out of 5000000
+ 29923 multiletter control sequences out of 15000+600000
  72286 words of font info for 57 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 67i,15n,96p,1315b,3371s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,15n,96p,1315b,3432s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
 nts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 }{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf-dist
@@ -1622,10 +1594,10 @@ lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/s
 hare/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf-dist/fonts/t
 ype1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pf
 b>
-Output written on main.pdf (39 pages, 2023316 bytes).
+Output written on main.pdf (38 pages, 1912476 bytes).
 PDF statistics:
- 748 PDF objects out of 1000 (max. 8388607)
- 651 compressed objects within 7 object streams
- 222 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 734 PDF objects out of 1000 (max. 8388607)
+ 643 compressed objects within 7 object streams
+ 219 named destinations out of 1000 (max. 500000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 
