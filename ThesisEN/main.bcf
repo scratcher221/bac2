@@ -2039,15 +2039,18 @@
     <bcf:citekey order="42">veritywhitepaper</bcf:citekey>
     <bcf:citekey order="43">veritywhitepaper</bcf:citekey>
     <bcf:citekey order="44">veritywhitepaper</bcf:citekey>
-    <bcf:citekey order="45">astraea</bcf:citekey>
-    <bcf:citekey order="46">astraea</bcf:citekey>
-    <bcf:citekey order="47">chainlinkdoc</bcf:citekey>
-    <bcf:citekey order="48">chainlinkdoc</bcf:citekey>
-    <bcf:citekey order="49">chainlinkdoc</bcf:citekey>
-    <bcf:citekey order="50">oraclizedoc</bcf:citekey>
-    <bcf:citekey order="51">tlsnotarywhitepaper</bcf:citekey>
-    <bcf:citekey order="52">steemitwhitepaper</bcf:citekey>
-    <bcf:citekey order="53">ipfswhitepaper</bcf:citekey>
+    <bcf:citekey order="45">veritywhitepaper</bcf:citekey>
+    <bcf:citekey order="46">veritywhitepaper</bcf:citekey>
+    <bcf:citekey order="47">veritywhitepaper</bcf:citekey>
+    <bcf:citekey order="48">astraea</bcf:citekey>
+    <bcf:citekey order="49">astraea</bcf:citekey>
+    <bcf:citekey order="50">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="51">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="52">chainlinkdoc</bcf:citekey>
+    <bcf:citekey order="53">oraclizedoc</bcf:citekey>
+    <bcf:citekey order="54">tlsnotarywhitepaper</bcf:citekey>
+    <bcf:citekey order="55">steemitwhitepaper</bcf:citekey>
+    <bcf:citekey order="56">ipfswhitepaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

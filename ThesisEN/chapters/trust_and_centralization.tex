@@ -37,9 +37,9 @@ In order to guarantee data integrity, a document can be requested from a smart c
 	\item Ledger Proof
 \end{itemize}
 \subsection*{TLSNotary Proof}
-\emph{TLSNotary} is an open-source protocol and a mechanism for independently audited HTTPS sessions. The technology is developed and used by the \emph{PageSigner} project\cite{pagesigner}. 
+\emph{TLSNotary} is an open-source protocol and a mechanism for independently audited HTTPS sessions. The technology is developed and used by the \emph{PageSigner} project\cite{pagesigner}. It is compatible with the TLS protocol versions 1.0 and 1.1.
 
-It works by splitting the secret data (premaster secret) used to setup the https session to the desired data source, \ie the server, between the auditee (in this case Oraclize) and the auditor (in this case a locked-down AWS instance of an open-source Amazon Machine Image). In this way, it is possible for the auditee, Oraclize, to prove to the auditor that certain web traffic has occurred between them and a server, and that the traffic has come, in fact, from the server (data origin authentication). The server would be the data source requested by the issuer of the "oraclize\textunderscore query" call, such as a machine that serves data over a REST API URL. This authenticity proof is indisputable, provided the auditor trusts the public key of the server (the data source)\cite{tlsnotarywhitepaper}\cite{oraclizedoc}.
+The proof works by splitting the secret data (premaster secret) used to setup the https session to the desired data source, \ie the server, between the auditee (in this case Oraclize) and the auditor (in this case a locked-down AWS instance of an open-source Amazon Machine Image). In this way, it is possible for the auditee, Oraclize, to prove to the auditor that certain web traffic has occurred between them and a server, and that the traffic has come, in fact, from the server (data origin authentication). The server would be the data source requested by the issuer of the "oraclize\textunderscore query" call, such as a machine that serves data over a REST API URL. This authenticity proof is indisputable, provided the auditor trusts the public key of the server (the data source)\cite{tlsnotarywhitepaper}\cite{oraclizedoc}.
 
 The basic steps of how the TLS secret data is split into two parts, and the control flow of how the auditor makes sure that the auditee doesn't produce manipulated data, can be outlined as follows:
 
@@ -149,11 +149,15 @@ There are JSON, XML, XHTML and binary parsing helpers offered by the Oraclize se
 
 The parameters of the slice operator are \texttt{(offset, length)}. This example will return the first 300 bytes in this binary file.
 \subsection{Verity}
-Verity is a platform for decentralized data feeds. It has a conceptually different approach to fetching data, when compared to Oraclize. Instead of connecting to Web-APIs, it sources the data by using wisdom of the crowd and blockchain-as-a-court-system\cite{veritywhitepaper}.
+Verity is a platform for decentralized data feeds that is still under development. It has a conceptually different approach to fetching data, when compared to Oraclize. Instead of connecting to Web-APIs, it sources the data by using wisdom of the crowd and blockchain-as-a-court-system\cite{veritywhitepaper}.
 
 Basically, the core concept of this service is to create an incentive for people to provide truthful data about real-world events. This is done by giving participants monetary rewards, in the form of cryptocurrencies, if they provide correct information about events that have happened in the world.
 
-The correctness of information in this system is determined by a rather complex consensus mechanism. Data providers (mostly people observing real world events) report on events via a desktop or mobile app. They can enter what the values of pre-defined parameters of a data request are, for instance, which team won a football game. The data request is made by developers of smart contracts that rely on data from the outside world, such as the outcome of a sports game, how many yellow cards were raised in a game, how many people attended an event, etc. The basic flow of information from the data providers to the developers is illustrated in the following figure:
+The correctness of information in this system is determined by a rather complex consensus mechanism. Data providers (mostly people observing real world events) report on events via a desktop or mobile app. They can enter what the values of pre-defined parameters of a data request are, for instance, which team won a football game. 
+
+The data request is made by developers of smart contracts that rely on data from the outside world, such as the outcome of a sports game, how many yellow cards were raised in a game, how many people attended an event, etc. 
+
+The basic flow of information from the data providers to the developers is illustrated in the following figure:
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.27]{verity-data-flow}
@@ -175,6 +179,8 @@ The following graphic provides a good overview over the architecture of the enti
 \caption{The architecture of the Verity Network\cite{veritywhitepaper}}
 \end{figure}
 
+\newpage
+
 \subsection*{Data Markets}
 In order to receive data from the Verity network, a developer first needs to specify what kind of data she wants, in what format the data should be provided, how the consensus for this data should be established, and how much she is willing to pay for this data\cite{veritywhitepaper}. This is necessary to incentivize people to provide high quality, truthful data.
 
@@ -187,7 +193,47 @@ The following figure illustrates what a data market in Verity consists of:
 \caption{The structure of a data market in Verity}
 \end{figure}
 
-Data providers populate this data feed with information. If there are multiple data fields in a data feed, a consensus is only reached, if all of the fields have the same value. 
+Data providers populate this data feed with information. If there are multiple data fields in a data feed, a consensus is only reached, if all of the fields have the same value.
+
+To define a market, the developer needs to specify all of the parameters and their values in the JSON format. A market definition containing several data feeds could look like this:
+
+\begin{GenericCode}
+{
+  "datafeeds":[
+    {
+      "name": "NFL Final - First Touchdown",
+      "description": "Report when the first touchdown in the NFL Final occurs",
+      "category1": "Sports",
+      "category2": "Football",
+      "category3":	NFL",
+      "min_people": 200,
+      "max_people":	1000,
+      "min_consensus": 180,
+      "consensus_rule": 0.7,
+      "reward_amount": 0.01,
+      "reward_currency": "ETH",
+      "stake_K": 2,
+      "cross_validate_Z": 0.03,
+      "data_type": "boolean",
+      "default_value": "None",
+      "min_validation_nodes:" 5,
+      "start_dispute_time": 7200,
+      "max_dispute_time": 86400,
+      "market_join_bonus": 1.2
+      "identity_hash": "None",
+      "stop_voting": 1560617966,
+      "time-to-join": 1560607966,
+      "webhook_url": "https://example.com/Verity_api/nfl_first_touchdown"
+    },
+    {
+      "name": "NFL Final - Fouls",
+      "description": "Report whenever a foul occurs in the game",
+      ...
+    }
+  ]
+}
+\end{GenericCode} 
+\captionof{lstlisting}{An example for a market definition}
 
 \subsection*{Verity Network Nodes}
 In the Verity network, there are two different kinds of nodes: \emph{Validation} nodes, and \emph{Data Providing} nodes.
@@ -199,6 +245,64 @@ Before a market is created, validation nodes for validating the data in this mar
 
 \subsection*{Data Providing Nodes}
 Data Providing Nodes do not partake in any consensus forming or voting, they are only there to send data to the validation nodes.
+
+The reputation of a data reporting node can be a determining factor for which data markets the node can join. It is also possible for a developer to specify that a data provider under a certain reputation score has to stake a specific amount of tokens in order to join her market, to make fraudulent reporting more financially risky.
+
+If the node does act maliciously, meaning it is not part of the consensus, their stake goes into the reward pool.
+
+\subsection*{Consensus Forming}
+As mentioned before, the exact parameters for how an agreement about event data is reached, are set by the creator of a data market. The consensus parameters are set alongside a variety of other parameters, such as category, event info, event start, minimum number of people that must join the data feed and maximum number of people that can join the data feed, stake factor, \etc.
+
+For the consensus, three parameters are relevant\cite{veritywhitepaper}
+\begin{itemize}
+\item min\textunderscore consensus: minimum number of people that must form a consensus
+\item consensus\textunderscore rule: percentage of votes that need to form the majority, \eg 66\%
+\item consensus\textunderscore mode: \emph{confirmations} or \emph{final}
+\end{itemize}
+The \emph{confirmations} consensus mode means that the developer will receive the result immediately after a consensus is reached. If this consensus is overthrown by later occurring votes, it is changed and the developer is notified about the new consensus. \emph{Final} mode means the consensus is only sent to the creator of the data market, when \emph{stop\textunderscore voting} is reached. \emph{Stop voting} is another parameter set by the market creator, that indicates until what time data providers can report data (a timestamp), or what percentage of voters needs to be reached until the market is considered decided.
+
+\subsection*{Reporting Data}
+Network participants who want to report on an event send with the developer's public key encrypted data to the validation nodes. This is important, so that the data can be monetized later on, if the developer, who is the market creator, chooses so.
+
+The validation nodes continue to accept data from providers, as long as no consensus has been reached, meaning at least \emph{min\textunderscore consensus} number of data providers \emph{n} have sent the same information, and those votes also represent \emph{consensus\textunderscore rule} \% of total votes\cite{veritywhitepaper}. 
+Formally, accept data from providers, until:
+\\
+\\
+$n[same\textunderscore data] > consensus\textunderscore rule \cdot n > min\textunderscore consensus$
+
+\subsection*{Receiving Data}
+After the validation nodes have confirmed that a consensus on a certain data feed has been reached, it gets sent to the market creator in the JSON format\cite{veritywhitepaper}:
+
+\begin{GenericCode}
+{
+  "data":[
+    {
+      "event_id": 9005,
+      "event_name": "NFL Finals - Touchdown",
+      "description": "Report the first touchdown in the game",
+      "consensus_rules": "cc13fdfc9c5ca32a7bcd2ab7146c07db9fb5c9f34e3b159408f684",
+      "contract": "0x24528467dfdabaef3fba7ad5796e39cfa9a99201",
+      "category1": "Sports",
+      "category2": "Football",
+      "category3": "NFL",
+      "event_start": 1560610110,
+      "event_end": 1560620110,
+      "event_ended_by": 3,
+      "event_state": 3,
+      "event_nonce": 2,
+      "consensus": 1,
+      "consensus_reached_in": 5,
+      "consensus_value": "86f1d0C35E40DbC027d205C3C1a73727C7d3C4C9511ec6021bd8",
+      "consensus_changed": 0,
+      "number_of_providers": 24,
+      "consensus_size": 19,
+      "validation_node": "0xhucc4bd8ee760243dbbf815511ec161d1cd6957d8",
+      "average_reputation": 3.75
+    }
+  ]
+}
+\end{GenericCode}
+\captionof{lstlisting}{Data delivered to the market creator}
 
 \subsection{Astraea}
 Astraea is a decentralized blockchain oracle, described in a paper by John Adler et al.\cite{astraea}, however it has never been implemented as a real world service. Other than Oraclize, it is not an intermediary for fetching data from third party sources, but attempts to deliver data based on a voting game that decides the truth or falsity of propositions.
